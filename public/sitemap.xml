@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with www.mysitemapgenerator.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://hedgehog-rp.ru/</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/news</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/user</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/country</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/tools</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/tools/message-news</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/tools/dice</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/support</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/tools/rosehip</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/support/feedback</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/support/auth-token</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/support/creators-list</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.4</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/about</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.2</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/settings</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.2</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/changelogs</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hedgehog-rp.ru/login</loc>
+	<lastmod>2024-09-24T20:46:52+01:00</lastmod>
+	<priority>0.2</priority>
+</url>
+</urlset>

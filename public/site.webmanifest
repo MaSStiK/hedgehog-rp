@@ -1,0 +1,45 @@
+{
+    "name": "Ежиное-RP",
+    "short_name": "Ежиное-RP",
+    "description": "Создай свою страну и развивай её в соответствии со своими желаниями и интересами!",
+    "lang": "ru-RU",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#1B1A1F",
+    "theme_color": "#1B1A1F",
+    "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/favicon-120x120.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "/favicon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "game",
+        "simulation",
+        "roleplaying"
+    ]
+}

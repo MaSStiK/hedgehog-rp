@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Не индексировать внутренние API
+Disallow: /api/
+
+# Не индексировать административную панель
+Disallow: /dev/
+
+# Карта сайта
+Sitemap: https://hedgehog-rp.ru/sitemap.xml
+
+# Адрес основного хоста
+Host: hedgehog-rp.ru
