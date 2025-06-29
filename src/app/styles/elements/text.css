@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
     /* Размеры текста */
     --h1: 24px;
@@ -31,7 +29,6 @@
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
     color: var(--text-white);
     font-size: var(--p);
     font-weight: 400;

@@ -43,7 +43,7 @@ a {
     width: var(--img-small);
     height: var(--img-small);
     opacity: 0.5; /* Серая картинка */
-    background-image: url("../assets/svg//Linkout.svg");
+    background-image: url("/svg/Linkout.svg");
     background-size: contain;
     background-repeat: no-repeat;
 

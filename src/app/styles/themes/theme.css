@@ -11,10 +11,10 @@
 }
 
 /* Новогодняя тема body[theme=snow]*/
-@import "./themes/theme_snow.css";
+@import "./theme_snow.css";
 
 /* Новогодняя тема body[theme=party]*/
-@import "./themes/theme_party.css";
+@import "./theme_party.css";
 
 /* Картинка заднего фона */
-@import "./themes/background.css";
+@import "./background.css";
