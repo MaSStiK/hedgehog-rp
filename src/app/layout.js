@@ -1,14 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google"
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
+import "@/app/styles/style.css"
+import "@/app/styles/app.css"
+import "@/app/styles/app-phone.css"
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const montserrat = Montserrat({
     subsets: ["latin"],
-});
+    weight: ["100","200","300","400","500","600","700","800","900"],
+    style: ["normal","italic"],
+    display: "swap"
+})
 
 export const metadata = {
     title: "Главная | Ежиное-RP",
@@ -103,7 +104,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="ru">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
+            <body className={montserrat.className}>
                 {children}
             </body>
         </html>
