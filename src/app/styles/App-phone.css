@@ -1,0 +1,50 @@
+/* Контент в 100% */
+@media screen and (max-width: 900px) {
+    /* Основной контейнер всего контента */
+    #root {
+        width: 100%; /* Ширина во всю страницу */
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Блок навигации */
+    aside {
+        width: 100%; /* Ширина во всю страницу */
+        height: 50px; /* 50px высота кнопок */
+
+        background-color: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-primary);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    /* Блок страницы */
+    article {
+        width: 100%; /* Ширина во всю страницу */
+
+        /* Отступ сверху 50px + 12px, Отступ снизу равен отступу между элементами, справа - 12 - ширина scroll */
+        padding: calc(50px + var(--gap-small))
+                 calc(var(--gap-small) - var(--scrollbar-width))
+                 var(--gap-small)
+                 var(--gap-small);
+    }
+
+    /* Добавляем scrollbar отступ снизу */
+    article::-webkit-scrollbar-track {
+        margin: calc(50px + var(--gap-small)) 0 var(--gap-small) 0;
+    }
+
+    /* Блок с контентом */
+    section {
+        margin: 0 auto; /* По центру страницы */
+    }
+
+    /* Заголовки страниц */
+    .page-title {
+        /* Делаем снизу отступ меньше что бы было одинаковое расстояние между aside и блоком под заголовком */
+        margin-bottom: calc(-1 * (var(--gap-medium) - var(--gap-small)));
+    }
+}

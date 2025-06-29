@@ -1,0 +1,77 @@
+@import "./elements/text.css";
+@import "./elements/link.css";
+@import "./elements/button.css";
+@import "./elements/input.css";
+@import "./elements/select.css";
+@import "./elements/page-loading.css";
+
+@import "./themes/theme.css";
+
+
+:root {
+    /* Основные цвета */
+    --bg-primary: #1B1A1F;
+    --bg-secondary: #242328;
+    --bg-transparent: #15151586;
+
+    /* Бордеры */
+    --border-primary: #413F46;
+    --border-radius: 4px;
+
+    /* Отступы между и внутри блоков */
+    --gap-small: 12px;
+    --gap-medium: 20px;
+
+    /* Ширина scrollbar */
+    --scrollbar-width: 6px;
+
+    /* Уровни слоев */
+    --z-under: -1;      /* Под основным контентом */
+    --z-main: 0;        /* Основной контент */
+    --z-over: 1;        /* Над основным контентом */
+    --z-above: 2;       /* Над страницей, но под навигацией */
+    --z-nav-bg: 3;      /* Подложка навигации (Черный фон) */
+    --z-nav-content: 4; /* Верх навигации */
+    --z-nav: 5;         /* Меню навигации */
+    --z-modal: 10;      /* Модальное окно (над навигацией) */
+    --z-loading: 100;   /* Загрузка (над модальным окном) */
+}
+
+/* Контент в 100% */
+@media screen and (max-width: 900px) {
+    /* Полоса прокрутки тоньше на телефоне */
+    :root {
+        --scrollbar-width: 4px
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+
+    transition: .2s all;
+}
+
+
+/* Полоса прокрутки */
+*::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+
+/* Задний фон полосы прокрутки */
+*::-webkit-scrollbar-track {
+    border-radius: var(--border-radius);
+    background-color: transparent;
+}
+
+/* Маркер прокрутки */
+*::-webkit-scrollbar-thumb {
+    border-radius: var(--border-radius);
+    background-color: var(--border-primary);
+}

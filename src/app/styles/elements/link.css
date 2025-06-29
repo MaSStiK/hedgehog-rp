@@ -1,0 +1,59 @@
+:root {
+    --img-small: 12px;
+}
+
+/* Ссылка (Указывается для тега <a> (Link) если в нем только текст) */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-link {
+    font-size: var(--p);
+    color: var(--text-link);
+    cursor: pointer;
+    
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .text-link:hover,
+    .text-link:focus-visible {
+        text-decoration: underline;
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    /* На мобильных девайсах ссылки подчеркнуты */
+    .text-link {
+        text-decoration: underline;
+    }
+}
+
+
+/* Картинка с ссылкой (linkout) */
+.link-image {
+    position: relative;
+    cursor: help;
+}
+
+.link-image::after {
+    content: "";
+    width: var(--img-small);
+    height: var(--img-small);
+    opacity: 0.5; /* Серая картинка */
+    background-image: url("../assets/svg//Linkout.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+}
+
+/* Серая картинка */
+.image-gray {
+    opacity: 0.5;
+}

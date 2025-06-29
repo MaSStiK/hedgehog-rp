@@ -1,0 +1,112 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-primary);
+}
+
+/* Основной контейнер всего контента */
+#root {
+    display: flex;
+    gap: 20px;
+
+    padding: 0 20px;
+}
+
+/* Блок навигации */
+aside {
+    width: calc(200px + var(--gap-small) + var(--scrollbar-width)); /* 200px размер навигации + 12px + scroll */
+    height: 100%; /* Высота во всю страницу */
+
+    z-index: var(--z-nav-content);
+}
+
+/* Навигация с задним фоном на пк */
+@media screen and (min-width: 900px) {
+    body[bg] aside {
+        width: calc(220px + var(--gap-small) + var(--scrollbar-width)); /* 200px размер навигации + 12px + scroll */
+    }
+}
+
+/* Блок страницы */
+article {
+    width: calc(600px + var(--gap-medium) + var(--scrollbar-width)); /* 600px размер страницы + 20px отступ + 6px полоса прокрутки */
+    height: 100%; /* Высота во всю страницу */
+    padding: var(--gap-medium) var(--gap-medium) var(--gap-medium) 0px; /* Внешний отступ блоков - 20px */
+    overflow-y: auto; /* scroll обычный */
+    overflow-x: hidden;
+    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium);
+
+    scrollbar-gutter: stable;
+}
+
+/* Добавляем scrollbar отступ снизу */
+article::-webkit-scrollbar-track {
+    margin: var(--gap-medium) 0;
+}
+
+/* CSS for other than iOS devices */ 
+@supports not (-webkit-touch-callout: none) {
+    article {
+        overflow-y: overlay; /* Scroll поверх */
+    }
+}
+
+/* Блок с контентом */
+section {
+    width: min(600px, 100%);
+    height: auto; /* Высота определяется контентом блока */
+    position: relative;
+
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--border-radius);
+    padding: var(--gap-small);
+}
+
+
+/* Заголовки страниц */
+.page-title {
+    width: min(600px, 100%);
+    color: var(--text-dark);
+    margin: 0 auto;
+}
+
+/* Разделитель */
+hr {
+    width: 100%;
+    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
+    border-bottom: 1px solid var(--border-primary);
+}
+
+
+/* Блок - флекс строка */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-small);
+}
+
+/* Блок - флекс колонна */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+/* Блок - флекс перенос строки */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.border-radius {
+    border-radius: var(--border-radius);
+}

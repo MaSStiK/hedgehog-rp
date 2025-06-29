@@ -1,0 +1,31 @@
+#page-loading {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-image: url("../assets/waiting.gif");
+    background-color: var(--bg-transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    z-index: var(--z-loading);
+    opacity: 0;
+    animation: page-loading-animation .5s forwards ease-in;
+
+    cursor: wait;
+}
+  
+@keyframes page-loading-animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Контент в 100% */
+@media screen and (max-width: 900px) {
+    #page-loading {
+        background-size: 50%;
+    }
+}

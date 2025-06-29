@@ -1,0 +1,28 @@
+/* Новогодняя тема body[theme=snow]*/
+/* Анимированный фон */
+body[theme=snow]::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-under);
+    background-image: url("../../assets/settings/theme-snow/snow.gif");
+    background-size: 500px;
+    opacity: 0.25;
+}
+
+/* Шапочки */
+body[theme=snow] section::after {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -13px;
+    width: var(--button-img-big);
+    height: var(--button-img-big);
+    background-image: url("../../assets/settings/theme-snow/hat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    rotate: 28deg;
+}

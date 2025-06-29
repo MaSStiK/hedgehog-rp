@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Размеры текста */
+    --h1: 24px;
+    --h2: 22px;
+    --h3: 20px;
+    --h4: 18px;
+    --p: 16px;
+    --p-small: 12px;
+
+    /* Цвет текста */
+    --text-white: rgba(255,255,255, 1);
+    --text-light: rgb(255,255,255, 0.9); /* 90% прозрачность */
+    --text-gray: rgba(255,255,255, 0.5); /* 50% прозрачность */
+    --text-dark: rgba(255,255,255, 0.3); /* 30% прозрачность */
+    --text-red: #D60027;
+    --text-link: #8B81E6;
+    --text-input-label: #B6B6B6;
+}
+
+/* Контент в 100% */
+@media screen and (max-width: 900px) {
+    :root {
+        --h1: 22px;
+        --h2: 20px;
+        --h3: 16px;
+        --h4: 15px;
+        --p: 14px;
+    }
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-white);
+    font-size: var(--p);
+    font-weight: 400;
+    word-break: break-word;
+}
+
+/* Стили для текста */
+h1, .h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+}
+
+h2, .h2 {
+    font-size: var(--h2);
+    font-weight: 700;
+}
+
+h3, .h3 {
+    font-size: var(--h3);
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: var(--h4);
+    font-weight: 500;
+}
+
+p, .p {
+    font-size: var(--p);
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
+small, .small {
+    font-size: var(--p-small);
+    font-weight: 300;
+}
+
+strong, .strong {
+    font-weight: 600;
+}
+
+/* Лейбл инпута */
+label {
+    font-size: var(--p);
+}
+
+
+/* Стили для цвета текста */
+.text-white {
+    color: var(--text-white);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-red {
+    color: var(--text-red);
+}
+
+
+/* Обрезающийся текст */
+.text-cut {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Превью текста */
+.text-preview {
+    width: fit-content;
+    color: transparent;
+    background-color: var(--bg-primary);
+}

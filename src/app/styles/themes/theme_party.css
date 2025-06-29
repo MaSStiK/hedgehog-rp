@@ -1,0 +1,32 @@
+/* Праздничная тема body[theme=party]*/
+/* Анимированный фон */
+/* body[theme=party]::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-under);
+    background-image: url("../../assets/settings/theme-party/party");
+    background-size: 500px;
+    opacity: 0.25;
+} */
+
+/* Праздничные колпаки */
+body[theme=party] section::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -14px;
+    width: var(--button-img-big);
+    height: var(--button-img-big);
+    background-image: url("../../assets/settings/theme-party/party-hat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    rotate: 18deg;
+}
+
+body[theme=party] .home__image-AA {
+    content: url("../../assets/settings/theme-party/Ace_Attorney party.png");
+}
