@@ -4,6 +4,12 @@
     gap: 0;
 }
 
+/* Скругленные углы */
+.ui-button_round {
+    border-radius: 18px;
+    padding: var(--button-padding) 8px;
+}
+
 /* Отключили gap у кнопки и даем тексту отступ с обеих сторон 4px */
 .ui-button p {
     text-align: left;

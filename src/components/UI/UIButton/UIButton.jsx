@@ -24,6 +24,7 @@ export default function UIButton({
     src,
     alt,
     text,
+    round,
     width100,
     atStart,
     phoneTextHide,
@@ -33,6 +34,7 @@ export default function UIButton({
     const classes = clsx(
         "ui-button",
         {
+            "ui-button_round": round, // Скругленные углы
             "ui-button_width100": width100, // Кнопка во всю ширину
             "ui-button_atStart": atStart, // Контент кнопки в начале
             "ui-button_phoneTextHide": phoneTextHide, // Текст кнопки скрывается на телефоне
