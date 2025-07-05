@@ -4,6 +4,7 @@
 @import "./elements/input.css";
 @import "./elements/select.css";
 @import "./elements/page-loading.css";
+@import "./elements/elements.css";
 
 @import "./themes/theme.css";
 
@@ -54,8 +55,6 @@
     list-style-type: none;
     scroll-behavior: smooth;
     color-scheme: dark;
-
-    transition: .2s all;
 }
 
 

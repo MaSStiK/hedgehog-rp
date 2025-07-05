@@ -1,0 +1,25 @@
+/* Разделитель */
+hr {
+    width: 100%;
+    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
+    border-bottom: 1px solid var(--border-primary);
+}
+
+/* Блок - флекс строка */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-small);
+}
+
+/* Блок - флекс колонна */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+/* Блок - флекс перенос строки */
+.flex-wrap {
+    flex-wrap: wrap;
+}

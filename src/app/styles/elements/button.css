@@ -1,7 +1,7 @@
 :root {
     /* Цвета кнопок */
     --button-bg: #322F39;
-    --button-hover: #55515C;
+    /* --button-hover: #55515C; */
 
     --button-bg-green: #006500;
     --button-hover-green: #008810;
@@ -10,7 +10,7 @@
     --button-hover-red: #A91922;
 
     --button-bg-tp: #FFFFFF00;
-    --button-hover-tp: #FFFFFF1F;
+    --button-hover-tp: #ffffff0C;
 
     --button-bg-clicked: #4b4753;
     --button-bg-disabled: #2E2C35;
@@ -108,7 +108,8 @@ button.clicked {
 @media (hover: hover) {
     button:hover,
     button:focus-visible {
-        background-color: var(--button-hover);
+        /* background-color: var(--button-hover); */
+        background-color: color-mix(in srgb, var(--button-bg) 80%, white);
     }
 
     button.green:hover,
@@ -136,7 +137,7 @@ button.clicked {
 /* Клик на телефоне */
 @media (hover: none) {
     button:active {
-        background-color: var(--button-hover);
+        background-color: color-mix(in srgb, var(--button-bg) 80%, white);
     }
 
     button.green:active {

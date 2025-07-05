@@ -1,0 +1,34 @@
+.ui-button {
+    width: fit-content; /* Ширина кнопки зависит от контента  и обтягивает его*/
+    min-width: var(--button-height); /* Минимальная ширина кнопки является высота и получается квадратная форма */
+    gap: 0;
+}
+
+/* Отключили gap у кнопки и даем тексту отступ с обеих сторон 4px */
+.ui-button p {
+    text-align: left;
+    padding: 0 var(--button-gap);
+}
+
+/* Кнопка во всю ширину */
+.ui-button_width100 {
+    width: 100%;
+}
+
+/* Контент кнопки слева, а не по центру */
+.ui-button_atStart {
+    justify-content: flex-start;
+}
+
+/* Иконка в кнопке чуть меньше кнопки */
+.ui-button img {
+    width: var(--button-img);
+    height: var(--button-img);
+}
+
+/* Мобильное сжатие */
+@media screen and (max-width: 400px) {
+    .ui-button_phoneTextHide p {
+        display: none;
+    }
+}

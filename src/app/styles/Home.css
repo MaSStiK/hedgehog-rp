@@ -1,0 +1,19 @@
+/* Картинка из Ace Attorney с персонажами */
+.home__ace-attorney {
+    width: min(600px, 100%);
+    height: auto;
+    margin: 0 auto -30px auto;
+}
+
+.calendar-text {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Видео с ютуб */
+iframe {
+    width: 100%;
+}
+
+.home__thumbnail {
+    width: 100%;
+}

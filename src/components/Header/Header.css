@@ -1,0 +1,24 @@
+:root {
+    --header-height: 61px;
+}
+
+/* Хедер */
+header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 var(--gap-medium);
+
+    border-bottom: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo a {
+    width: 52px;
+    height: 52px;
+}

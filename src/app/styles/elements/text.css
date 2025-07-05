@@ -1,11 +1,12 @@
 :root {
     /* Размеры текста */
     --h1: 24px;
-    --h2: 22px;
+    --h2: 24px;
     --h3: 20px;
     --h4: 18px;
     --p: 16px;
     --p-small: 12px;
+    --p-big: 40px;
 
     /* Цвет текста */
     --text-white: rgba(255,255,255, 1);
@@ -20,10 +21,10 @@
 /* Контент в 100% */
 @media screen and (max-width: 900px) {
     :root {
-        --h1: 22px;
+        --h1: 20px;
         --h2: 20px;
         --h3: 16px;
-        --h4: 15px;
+        --h4: 16px;
         --p: 14px;
     }
 }
@@ -65,6 +66,11 @@ p, .p {
 small, .small {
     font-size: var(--p-small);
     font-weight: 300;
+}
+
+big, .big {
+    font-size: var(--p-big);
+    font-weight: 700;
 }
 
 strong, .strong {
