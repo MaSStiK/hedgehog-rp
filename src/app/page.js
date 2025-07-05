@@ -32,14 +32,13 @@ export default function Home() {
 
             <section className="flex-col">
                 <h2>Новое видео на Ежином&nbsp;ТВ</h2>
-                
                 <Link href="https://tv.hedgehog-rp.ru/watch/s4e14" target="_blank" rel="noopener noreferrer">
                     <Image
                         className="home__thumbnail"
                         src={imgVideoThumbnail}
                         alt="thumbnail"
-                        width={574}
-                        height={338}
+                        width={704}
+                        height={396}
                         draggable={false}
                     />
                     <h3>4 сезон 14 серия | Предвоенный синдром</h3>

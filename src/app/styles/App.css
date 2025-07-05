@@ -38,7 +38,7 @@ article {
 
 /* Блок с контентом */
 section {
-    width: min(600px, 100%);
+    width: min(730px, 100%);
     padding: var(--gap-small);
     position: relative;
 

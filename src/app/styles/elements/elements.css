@@ -2,7 +2,7 @@
 hr {
     width: 100%;
     border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
-    border-bottom: 1px solid var(--border-primary);
+    border-bottom: 1px solid rgb(38, 41, 43);
 }
 
 /* Блок - флекс строка */

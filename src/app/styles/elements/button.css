@@ -1,27 +1,19 @@
 :root {
     /* Цвета кнопок */
-    --button-bg: #322F39;
-    /* --button-hover: #55515C; */
-
-    --button-bg-green: #006500;
-    --button-hover-green: #008810;
-
-    --button-bg-red: #7A141A;
-    --button-hover-red: #A91922;
-
-    --button-bg-tp: #FFFFFF00;
-    --button-hover-tp: #ffffff0C;
-
-    --button-bg-clicked: #4b4753;
-    --button-bg-disabled: #2E2C35;
+    --button-default:       rgb(49, 54, 62);
+    --button-default-hover: rgb(56, 64, 75);
+    --button-green:         rgb(62, 163, 123);
+    --button-green-hover:   rgb(66, 189, 140);
+    --button-red:           rgb(122, 20, 26);
+    --button-red-hover:     rgb(151, 17, 26);
+    --button-tp:            transparent;
+    --button-tp-hover:      rgb(35, 44, 49);
+    --button-active:        rgb(42, 50, 54);
+    --button-disabled: #2E2C35;
 
     /* Обычная кнопка (картинка на 12px меньше - 6px отступ) */
     --button-height: 36px;
     --button-img: 24px;
-
-    /* Кнопки в навигации */
-    --button-height-nav: 36px;
-    --button-img-nav: 24px;
 
     /* Большая кнопка (для профиля и тд.) */
     --button-height-big: 48px;
@@ -58,7 +50,7 @@ button {
     outline: none;
     border: none;
     border-radius: var(--border-radius);
-    background-color: var(--button-bg);
+    background-color: var(--button-default);
 
     overflow: hidden;
     user-select: none;
@@ -67,17 +59,17 @@ button {
 
 /* Важная кнопка (Зеленая) */
 button.green {
-    background-color: var(--button-bg-green);
+    background-color: var(--button-green);
 }
 
 /* Опасная кнопка (Красная) */
 button.red {
-    background-color: var(--button-bg-red);
+    background-color: var(--button-red);
 }
 
 /* Кнопка в списке (Прозрачная) */
 button.tp {
-    background-color: var(--button-bg-tp);
+    background-color: var(--button-tp);
 }
 
 
@@ -85,7 +77,7 @@ button.tp {
 button:disabled {
     cursor: not-allowed;
     color: var(--text-dark);
-    background-color: var(--button-bg-disabled);
+    background-color: var(--button-disabled);
 }
 
 /* Текст внутри отключенной кнопки */
@@ -99,37 +91,31 @@ button:disabled img {
 }
 
 /* Нажатая кнопка */
-button.clicked {
-    background-color: var(--button-bg-clicked);
+button.active {
+    background-color: var(--button-active) !important;
 }
 
 
 /* Наведение на пк */
 @media (hover: hover) {
-    button:hover,
-    button:focus-visible {
-        /* background-color: var(--button-hover); */
-        background-color: color-mix(in srgb, var(--button-bg) 80%, white);
+    button:is(:hover, :focus-visible) {
+        background-color: var(--button-default-hover);
     }
 
-    button.green:hover,
-    button.green:focus-visible {
-        background-color: var(--button-hover-green);
+    button.green:is(:hover, :focus-visible) {
+        background-color: var(--button-green-hover);
     }
 
-    button.red:hover,
-    button.red:focus-visible {
-        background-color: var(--button-hover-red);
+    button.red:is(:hover, :focus-visible) {
+        background-color: var(--button-red-hover);
     }
 
-    button.tp:hover,
-    button.tp:focus-visible {
-        background-color: var(--button-hover-tp);
+    button.tp:is(:hover, :focus-visible) {
+        background-color: var(--button-tp-hover);
     }
 
-    button:disabled:hover,
-    button:disabled:focus-visible {
-        background-color: var(--button-bg-disabled);
+    button:disabled:is(:hover, :focus-visible) {
+        background-color: var(--button-disabled);
     }
 }
 
@@ -137,22 +123,22 @@ button.clicked {
 /* Клик на телефоне */
 @media (hover: none) {
     button:active {
-        background-color: color-mix(in srgb, var(--button-bg) 80%, white);
+        background-color: var(--button-default-hover);
     }
 
     button.green:active {
-        background-color: var(--button-hover-green);
+        background-color: var(--button-green-hover);
     }
 
     button.red:active {
-        background-color: var(--button-hover-red);
+        background-color: var(--button-red-hover);
     }
 
     button.tp:active {
-        background-color: var(--button-hover-tp);
+        background-color: var(--button-tp-hover);
     }
 
     button:disabled:active {
-        background-color: var(--button-bg-disabled);
+        background-color: var(--button-disabled);
     }
 }
