@@ -32,6 +32,7 @@ export default function Navigation() {
                 <NavLink href="/about" title="О нас" icon="/svg/Info.svg" />
                 <NavLink href="/settings" title="Настройки" icon="/svg/Settings.svg" />
                 <NavLink href="/changelogs" title="Обновления" icon="/svg/Update.svg" />
+                <NavLink href="/dev" title="dev" icon="/svg/Dev.svg" />
             </ul>
         </nav>
     )

@@ -4,9 +4,6 @@ import Link from "next/link"
 import Image from "next/image"
 import UIButton from "@/components/UI/UIButton/UIButton"
 
-import imgAceAttorney from "@/assets/home/Ace-Attorney.png"
-import imgVideoThumbnail from "@/assets/home/video-thumbnail.png"
-
 import "@/app/styles/Home.css"
 
 export default function Home() {
@@ -14,9 +11,9 @@ export default function Home() {
         <>
             <Image
                 className="home__ace-attorney"
-                src={imgAceAttorney}
+                src="/assets/home/Ace-Attorney.png"
                 alt="Ace-Attorney"
-                width={600}
+                width={640}
                 height={0}
                 draggable={false}
             />
@@ -35,7 +32,7 @@ export default function Home() {
                 <Link href="https://tv.hedgehog-rp.ru/watch/s4e14" target="_blank" rel="noopener noreferrer">
                     <Image
                         className="home__thumbnail"
-                        src={imgVideoThumbnail}
+                        src="/assets/home/video-thumbnail.png"
                         alt="thumbnail"
                         width={704}
                         height={396}
@@ -48,7 +45,7 @@ export default function Home() {
                     <a href="https://vk.com/hedgehogs_army" target="_blank" rel="noopener noreferrer">
                         <UIButton
                             className="tp"
-                            src="/assets/vk.svg"
+                            src="/assets/home/vk.svg"
                             alt="vk"
                             text="Группа в ВК"
                             title="Перейти к группе в ВК"
@@ -57,7 +54,7 @@ export default function Home() {
                     <a href="https://www.youtube.com/@hedgehogs_army" target="_blank" rel="noopener noreferrer">
                         <UIButton
                             className="tp"
-                            src="/assets/youtube.svg"
+                            src="/assets/home/youtube.svg"
                             alt="youtube"
                             text="Канал на YouTube"
                             title="Перейти к каналу на YouTube"

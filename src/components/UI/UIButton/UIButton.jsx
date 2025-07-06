@@ -6,7 +6,7 @@ import "./UIButton.css"
 
 // Пример использования
 /* <UIButton
-    src={imgButton}
+    src="/assets/image.png"
     alt="button-test"
     className=""
     text="text"
