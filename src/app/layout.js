@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google"
 import Header from "@/components/Header/Header"
+import Aside from "@/components/Aside/Aside"
 import Navigation from "@/components/Navigation/Navigation"
 
 import "@/app/styles/style.css"
@@ -16,29 +17,24 @@ const montserrat = Montserrat({
 export const metadata = {
     title: "Главная | Ежиное-RP",
     description: "Создай свою страну и развивай её в соответствии со своими желаниями и интересами!",
-    themeColor: "#1B1A1F",
 
     icons: {
-        // Основной .ico
-        icon: [
+        icon: [ // Основные .ico
             { url: "/favicon.ico", rel: "icon" },
             { url: "/favicon-16x16.png", sizes: "16x16", rel: "icon" },
             { url: "/favicon-32x32.png", sizes: "32x32", rel: "icon" }
         ],
-        // iOS
-        apple: [
+        apple: [ // iOS
             { url: "/favicon-120x120.png", sizes: "120x120", rel: "apple-touch-icon" },
             { url: "/favicon-152x152.png", sizes: "152x152", rel: "apple-touch-icon" },
             { url: "/favicon-180x180.png", sizes: "180x180", rel: "apple-touch-icon" }
         ],
-        // PWA/Android maskable
-        other: [
+        other: [ // PWA/Android maskable
             { rel: "mask-icon", url: "/favicon-192x192.png", color: "#1B1A1F" }
         ]
     },
     manifest: "/site.webmanifest",
 
-    // 2) Open Graph
     openGraph: {
         title: "Главная | Ежиное-RP",
         description: "Создай свою страну и развивай её в соответствии со своими желаниями и интересами!",
@@ -48,7 +44,6 @@ export const metadata = {
         type: "website"
     },
 
-    // Twitter Cards
     twitter: {
         card: "summary_large_image",
         title: "Главная | Ежиное-RP",
@@ -58,18 +53,15 @@ export const metadata = {
         // creator: "@your_twitter_handle"
     },
 
-    // Канонический URL
-    alternates: {
+    alternates: { // Канонический URL
         canonical: "https://hedgehog-rp.ru",
     },
 
-    // Robots
     robots: {
         index: true,
         follow: true,
         nocache: true,
     },
-
     // Локализация (если будут мультиязычные версии)
     // metadata.i18n или через alternates.languages
 
@@ -103,6 +95,10 @@ export const metadata = {
     },
 };
 
+export const viewport = {
+    themeColor: "#14181b",
+}
+
 export default function RootLayout({ children }) {
     return (
         <html lang="ru">
@@ -112,6 +108,7 @@ export default function RootLayout({ children }) {
                     <Navigation />
                     <article>
                         {children}
+                        <Aside />
                     </article>
                 </main>
             </body>
