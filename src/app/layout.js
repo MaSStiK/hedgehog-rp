@@ -21,16 +21,16 @@ export const metadata = {
     icons: {
         icon: [ // Основные .ico
             { url: "/favicon.ico", rel: "icon" },
-            { url: "/favicon-16x16.png", sizes: "16x16", rel: "icon" },
-            { url: "/favicon-32x32.png", sizes: "32x32", rel: "icon" }
+            { url: "/favicons/favicon-16x16.png", sizes: "16x16", rel: "icon" },
+            { url: "/favicons/favicon-32x32.png", sizes: "32x32", rel: "icon" }
         ],
         apple: [ // iOS
-            { url: "/favicon-120x120.png", sizes: "120x120", rel: "apple-touch-icon" },
-            { url: "/favicon-152x152.png", sizes: "152x152", rel: "apple-touch-icon" },
-            { url: "/favicon-180x180.png", sizes: "180x180", rel: "apple-touch-icon" }
+            { url: "/favicons/favicon-120x120.png", sizes: "120x120", rel: "apple-touch-icon" },
+            { url: "/favicons/favicon-152x152.png", sizes: "152x152", rel: "apple-touch-icon" },
+            { url: "/favicons/favicon-180x180.png", sizes: "180x180", rel: "apple-touch-icon" }
         ],
         other: [ // PWA/Android maskable
-            { rel: "mask-icon", url: "/favicon-192x192.png", color: "#1B1A1F" }
+            { url: "/favicons/favicon-192x192.png", rel: "mask-icon", color: "#14181B" }
         ]
     },
     manifest: "/site.webmanifest",
@@ -40,7 +40,7 @@ export const metadata = {
         description: "Создай свою страну и развивай её в соответствии со своими желаниями и интересами!",
         url: "https://hedgehog-rp.ru",
         siteName: "Ежиное-RP",
-        images: ["/faviconOG.png"],
+        images: ["/favicons/faviconOG.png"],
         type: "website"
     },
 
@@ -48,7 +48,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "Главная | Ежиное-RP",
         description: "Создай свою страну и развивай её в соответствии со своими желаниями и интересами!",
-        images: ["/faviconOG.png"],
+        images: ["/favicons/faviconOG.png"],
         // site: "@your_twitter_handle",
         // creator: "@your_twitter_handle"
     },
@@ -96,7 +96,7 @@ export const metadata = {
 };
 
 export const viewport = {
-    themeColor: "#14181b",
+    themeColor: "#14181B",
 }
 
 export default function RootLayout({ children }) {

@@ -7,16 +7,16 @@
     "scope": "/",
     "display": "standalone",
     "orientation": "portrait-primary",
-    "background_color": "#1B1A1F",
-    "theme_color": "#1B1A1F",
+    "background_color": "#14181B",
+    "theme_color": "#14181B",
     "icons": [
         {
-            "src": "/favicon-16x16.png",
+            "src": "/favicon/favicon-16x16.png",
             "type": "image/png",
             "sizes": "16x16"
         },
         {
-            "src": "/favicon-32x32.png",
+            "src": "/favicon/favicon-32x32.png",
             "type": "image/png",
             "sizes": "32x32"
         },
@@ -26,12 +26,12 @@
             "sizes": "64x64"
         },
         {
-            "src": "/favicon-120x120.png",
+            "src": "/favicon/favicon-120x120.png",
             "type": "image/png",
             "sizes": "120x120"
         },
         {
-            "src": "/favicon-192x192.png",
+            "src": "/favicon/favicon-192x192.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "any maskable"
