@@ -5,7 +5,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import clsx from "clsx"
 
-export default function NavigationLink({ href, title, icon }) {
+export default function NavLink({ href, title, icon }) {
     const pathname = usePathname()
     const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href)
 

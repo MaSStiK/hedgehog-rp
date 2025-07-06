@@ -1,5 +1,5 @@
 /* Навигация */
-aside {
+nav {
     min-width: calc(var(--gap-medium) + 230px + var(--gap-medium));
     height: calc(100% - var(--header-height)); /* Высота во всю страницу */
     padding: var(--gap-medium);
@@ -7,7 +7,7 @@ aside {
     background-color: var(--bg-primary);
 }
 
-aside ul hr {
+nav ul hr {
     margin: 12px 0;
 }
 
@@ -15,6 +15,7 @@ aside ul hr {
 .nav-link {
     --nav-tp:       transparent;
     --nav-tp-hover: rgba(29, 34, 37, 100%);
+    --nav-active: rgb(42, 50, 54);
 
     width: 100%;
     height: 40px;
@@ -28,10 +29,11 @@ aside ul hr {
     border-radius: 8px;
 }
 
-.nav-link.active {
-    background-color: var(--nav-active) !important;
+nav .nav-link.active {
+    /* Активная ссылка не перебивается эффектом при наведении */
+    background-color: var(--nav-active);
 }
-.nav-link.active p {
+nav .nav-link.active p {
     color: var(--text-white);
 }
 

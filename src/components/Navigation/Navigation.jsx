@@ -1,4 +1,4 @@
-import NavigationLink from "./NavigationLink"
+import NavLink from "./NavLink"
 
 import "./Navigation.css"
 
@@ -18,21 +18,21 @@ const links = [
 
 export default function Navigation() {
     return (
-        <aside>
+        <nav>
             <ul>
-                <NavigationLink href="/" title="Главная" icon="/svg/Home.svg" />
-                <NavigationLink href="/news" title="Новости" icon="/svg/News.svg" />
-                <NavigationLink href="/user" title="Участники" icon="/svg/User.svg" />
-                <NavigationLink href="/country" title="Страны" icon="/svg/Country.svg" />
-                <NavigationLink href="https://map.hedgehog-rp.ru" title="Карта мира" icon="/svg/Map.svg" />
-                <NavigationLink href="https://tv.hedgehog-rp.ru" title="Ежиное ТВ" icon="/svg/Video.svg" />
+                <NavLink href="/" title="Главная" icon="/svg/Home.svg" />
+                <NavLink href="/news" title="Новости" icon="/svg/News.svg" />
+                <NavLink href="/user" title="Участники" icon="/svg/User.svg" />
+                <NavLink href="/country" title="Страны" icon="/svg/Country.svg" />
+                <NavLink href="https://map.hedgehog-rp.ru" title="Карта мира" icon="/svg/Map.svg" />
+                <NavLink href="https://tv.hedgehog-rp.ru" title="Ежиное ТВ" icon="/svg/Video.svg" />
                 <hr />
-                <NavigationLink href="/tools" title="Инструменты" icon="/svg/Tool.svg" />
-                <NavigationLink href="/support" title="Помощь" icon="/svg/Help.svg" />
-                <NavigationLink href="/about" title="О нас" icon="/svg/Info.svg" />
-                <NavigationLink href="/settings" title="Настройки" icon="/svg/Settings.svg" />
-                <NavigationLink href="/changelogs" title="Обновления" icon="/svg/Update.svg" />
+                <NavLink href="/tools" title="Инструменты" icon="/svg/Tool.svg" />
+                <NavLink href="/support" title="Помощь" icon="/svg/Help.svg" />
+                <NavLink href="/about" title="О нас" icon="/svg/Info.svg" />
+                <NavLink href="/settings" title="Настройки" icon="/svg/Settings.svg" />
+                <NavLink href="/changelogs" title="Обновления" icon="/svg/Update.svg" />
             </ul>
-        </aside>
+        </nav>
     )
 }
