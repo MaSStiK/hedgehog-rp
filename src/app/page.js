@@ -13,7 +13,7 @@ export default function Home() {
                 className="home__ace-attorney"
                 src="/assets/home/Ace-Attorney.png"
                 alt="Ace-Attorney"
-                width={640}
+                width={875}
                 height={0}
                 draggable={false}
             />
