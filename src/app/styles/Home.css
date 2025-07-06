@@ -1,6 +1,6 @@
 /* Картинка из Ace Attorney с персонажами */
 .home__ace-attorney {
-    width: min(730px, 100%);
+    width: min(700px, calc(100% - 30px));
     height: auto;
     margin: 0 auto -30px auto;
 }
