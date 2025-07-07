@@ -7,7 +7,6 @@ import "./Aside.css"
 
 export default function Aside() {
     const Context = useContext(DataContext)
-    console.log(Context.Aside);
 
     if (Array.isArray(Context.Aside) && Context.Aside.length === 0) {
         return (<></>)
