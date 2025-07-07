@@ -2,7 +2,7 @@
 .home__ace-attorney {
     width: min(700px, calc(100% - 30px));
     height: auto;
-    margin: 0 auto -30px auto;
+    margin-bottom: -30px;
 }
 
 .calendar-text {
@@ -11,5 +11,6 @@
 
 .home__thumbnail {
     width: 100%;
+    height: auto;
     border-radius: var(--border-radius);
 }

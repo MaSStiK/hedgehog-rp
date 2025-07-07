@@ -1,12 +1,26 @@
+"use client"
+import { useContext } from "react"
+import { DataContext } from "@/components/Context"
 import Link from "next/link"
 import Image from "next/image"
 import "./Aside.css"
 
 export default function Aside() {
-    return (
-        <aside>
-            <h3>Ежиное Рп</h3>
-            <button>Группа в вк</button>
-        </aside>
-    )
+    const Context = useContext(DataContext)
+    console.log(Context.Aside);
+
+    if (Array.isArray(Context.Aside) && Context.Aside.length === 0) {
+        return (<></>)
+    } else if (!Context.Aside) {
+        return (<></>)
+    } else {
+        return (
+            <div id="aside-wrapper">
+                <aside>
+                    {Context.Aside}
+                </aside>
+            </div>
+        )
+    }
+
 }

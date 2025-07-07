@@ -4,6 +4,11 @@
     gap: 0;
 }
 
+/* Маленький текст */
+.ui-button_small p {
+    font-size: var(--p-small);
+}
+
 /* Скругленные углы */
 .ui-button_round {
     border-radius: 18px;

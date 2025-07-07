@@ -13,9 +13,9 @@ nav ul hr {
 
 /* Кнопка навигации */
 .nav-link {
-    --nav-tp:       transparent;
+    --nav-tp:       rgba(255, 255, 255, 0%);
     --nav-tp-hover: rgba(29, 34, 37, 100%);
-    --nav-active: rgb(42, 50, 54);
+    --nav-active:   rgb(42, 50, 54);
 
     width: 100%;
     height: 40px;

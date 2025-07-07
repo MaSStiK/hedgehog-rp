@@ -8,37 +8,57 @@ body {
     background-color: var(--bg-primary);
 }
 
+/* Блок main расположен под header */
 main {
     height: 100%;
     display: flex;
 }
 
-
-/* Блок страницы */
-article {
+#content {
     width: 100%;
     height: calc(100% - var(--header-height));
-    padding: var(--gap-medium);
+    padding: 0 var(--gap-medium);
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: var(--gap-medium);
+    position: relative;
 
     overflow-y: auto;
     scrollbar-gutter: stable;
 }
 
+/* for theme test */
+#content {
+    background-image: url("/assets/settings/bg4.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
 /* CSS for other than iOS devices */ 
 @supports not (-webkit-touch-callout: none) {
-    article {
+    #content {
         overflow-y: overlay; /* Scroll поверх */
     }
 }
 
+
+/* Блок контейнером страницы */
+article {
+    width: min(730px, 100%);
+    height: fit-content;
+    padding: var(--gap-medium) 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-medium);
+}
+
 /* Блок с контентом */
 section {
-    width: min(730px, 100%);
+    width: 100%;
     padding: var(--gap-small);
     position: relative;
 

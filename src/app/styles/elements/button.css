@@ -1,12 +1,12 @@
 :root {
     /* Цвета кнопок */
     --button-default:       rgb(49, 54, 62);
-    --button-default-hover: rgb(56, 64, 75);
-    --button-green:         rgb(62, 163, 123);
-    --button-green-hover:   rgb(66, 189, 140);
+    --button-default-hover: rgb(79, 87, 100);
+    --button-green:         rgb(42, 111, 84);
+    --button-green-hover:   rgb(56, 149, 112);
     --button-red:           rgb(122, 20, 26);
-    --button-red-hover:     rgb(151, 17, 26);
-    --button-tp:            transparent;
+    --button-red-hover:     rgb(160, 26, 34);
+    --button-tp:            rgba(255, 255, 255, 0%);
     --button-tp-hover:      rgb(35, 44, 49);
     --button-active:        rgb(42, 50, 54);
     --button-disabled: #2E2C35;

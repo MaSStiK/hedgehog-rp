@@ -1,7 +1,8 @@
 import { Montserrat } from "next/font/google"
+import { DataProvider } from "@/components/Context"
 import Header from "@/components/Header/Header"
-import Aside from "@/components/Aside/Aside"
 import Navigation from "@/components/Navigation/Navigation"
+import Aside from "@/components/Aside/Aside"
 
 import "@/app/styles/style.css"
 import "@/app/styles/app.css"
@@ -103,14 +104,18 @@ export default function RootLayout({ children }) {
     return (
         <html lang="ru">
             <body className={montserrat.className}>
-                <Header />
-                <main>
-                    <Navigation />
-                    <article>
-                        {children}
-                        <Aside />
-                    </article>
-                </main>
+                <DataProvider>
+                    <Header />
+                    <main>
+                        <Navigation />
+                        <div id="content">
+                            <article>
+                                {children}
+                            </article>
+                            <Aside />
+                        </div>
+                    </main>
+                </DataProvider>
             </body>
         </html>
     );
