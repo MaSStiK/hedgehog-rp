@@ -1,9 +1,9 @@
 import { Montserrat } from "next/font/google"
 import { DataProvider } from "@/components/Context"
 
-import "./styles/style.css"
-import "./styles/app.css"
-// import "./styles/app-phone.css"
+import "@/app/styles/style.css"
+import "@/app/styles/app.css"
+// import "@/app/styles/app-phone.css"
 
 const themeColor = "#14181B"
 
