@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 import path from 'path';
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: { appDir: true },
   webpack(config) {
