@@ -1,18 +1,18 @@
 "use client"
 import { useContext, useEffect } from "react"
-import { DataContext } from "@/components/Context"
+import { AsideContext } from "@/components/AsideContext"
 import Link from "next/link"
 import Image from "next/image"
-import Aside from "@/components/Aside/Aside"
 import HomeAside from "@/components/Home/HomeAside"
 import UIButton from "@/components/UI/UIButton/UIButton"
 
 import "@/components/Home/Home.css"
 
 export default function Home() {
-    const Context = useContext(DataContext)
+     const { setAside, setAsideLoading } = useContext(AsideContext)
     useEffect(() => {
-        Context.setAside(HomeAside)
+        setAside(HomeAside)
+        setAsideLoading(false)
     }, [])
 
     return (

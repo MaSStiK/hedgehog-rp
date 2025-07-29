@@ -1,14 +1,14 @@
-"use client";
-import { createContext, useState } from "react";
+"use client"
+import { createContext, useState } from "react"
 
 // Создание контекста
 export const DataContext = createContext(null);
 
 export function DataProvider({ children }) {
-    const [Aside, setAside] = useState();
+    const [UserData, setUserData] = useState();
 
     return (
-        <DataContext.Provider value={{ Aside, setAside }}>
+        <DataContext.Provider value={{ UserData, setUserData }}>
             {children}
         </DataContext.Provider>
     );

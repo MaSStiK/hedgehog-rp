@@ -5,9 +5,6 @@ import UIButton from "@/components/UI/UIButton/UIButton"
 
 export default function Dev() {
     const Context = useContext(DataContext)
-    useEffect(() => {
-        Context.setAside()
-    }, [])
     
     return (
         <section className="flex-col">

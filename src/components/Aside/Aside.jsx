@@ -1,23 +1,27 @@
 "use client"
 import { useContext } from "react"
-import { DataContext } from "@/components/Context"
-import Link from "next/link"
-import Image from "next/image"
+import { AsideContext } from "@/components/AsideContext"
+import AsideLoading from "./AsideLoading"
 import "./Aside.css"
 
-export default function Aside({ children }) {
-    const { Aside } = useContext(DataContext)
-    console.log(Aside);
-    
+export default function Aside() {
+    const { asideJSX, asideLoading } = useContext(AsideContext)
 
-    if (!Aside || (Array.isArray(Aside) && Aside.length === 0)) {
-        return null
+    if (asideLoading) {
+        console.log("loading");
+        return <AsideLoading />
     }
 
+    if (!asideLoading && asideJSX === null) {
+        console.log("no data");
+        return
+    }
+
+    console.log("render");
     return (
         <div id="aside-wrapper">
             <aside>
-                {Aside}
+                {asideJSX}
             </aside>
         </div>
     )

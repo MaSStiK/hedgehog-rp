@@ -3,7 +3,7 @@ import UIButton from "@/components/UI/UIButton/UIButton"
 
 import "@/app/styles/Not-found.css"
 
-export default function NotFound () {
+export default function NotFound() {
     return (
         <div id="not-found">
             <big>404 Not Found</big>
