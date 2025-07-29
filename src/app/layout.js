@@ -1,12 +1,9 @@
 import { Montserrat } from "next/font/google"
 import { DataProvider } from "@/components/Context"
-import Header from "@/components/Header/Header"
-import Navigation from "@/components/Navigation/Navigation"
-import Aside from "@/components/Aside/Aside"
 
-import "@/app/styles/style.css"
-import "@/app/styles/app.css"
-// import "@/app/styles/app-phone.css"
+import "./styles/style.css"
+import "./styles/app.css"
+// import "./styles/app-phone.css"
 
 const themeColor = "#14181B"
 
@@ -107,16 +104,7 @@ export default function RootLayout({ children }) {
         <html lang="ru">
             <body className={montserrat.className}>
                 <DataProvider>
-                    <Header />
-                    <main>
-                        <Navigation />
-                        <div id="content">
-                            <article>
-                                {children}
-                            </article>
-                            <Aside />
-                        </div>
-                    </main>
+                    {children}
                 </DataProvider>
             </body>
         </html>
