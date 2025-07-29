@@ -8,6 +8,8 @@ import "@/app/styles/style.css"
 import "@/app/styles/app.css"
 // import "@/app/styles/app-phone.css"
 
+const themeColor = "#14181B"
+
 const montserrat = Montserrat({
     subsets: ["latin"],
     weight: ["100","200","300","400","500","600","700","800","900"],
@@ -31,7 +33,7 @@ export const metadata = {
             { url: "/favicons/favicon-180x180.png", sizes: "180x180", rel: "apple-touch-icon" }
         ],
         other: [ // PWA/Android maskable
-            { url: "/favicons/favicon-192x192.png", rel: "mask-icon", color: "#14181B" }
+            { url: "/favicons/favicon-192x192.png", rel: "mask-icon", color: themeColor }
         ]
     },
     manifest: "/site.webmanifest",
@@ -97,7 +99,7 @@ export const metadata = {
 };
 
 export const viewport = {
-    themeColor: "#14181B",
+    themeColor: themeColor,
 }
 
 export default function RootLayout({ children }) {

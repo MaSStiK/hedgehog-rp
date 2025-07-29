@@ -5,21 +5,20 @@ import Link from "next/link"
 import Image from "next/image"
 import "./Aside.css"
 
-export default function Aside() {
-    const Context = useContext(DataContext)
+export default function Aside({ children }) {
+    const { Aside } = useContext(DataContext)
+    console.log(Aside);
+    
 
-    if (Array.isArray(Context.Aside) && Context.Aside.length === 0) {
-        return (<></>)
-    } else if (!Context.Aside) {
-        return (<></>)
-    } else {
-        return (
-            <div id="aside-wrapper">
-                <aside>
-                    {Context.Aside}
-                </aside>
-            </div>
-        )
+    if (!Aside || (Array.isArray(Aside) && Aside.length === 0)) {
+        return null
     }
 
+    return (
+        <div id="aside-wrapper">
+            <aside>
+                {Aside}
+            </aside>
+        </div>
+    )
 }

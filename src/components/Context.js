@@ -5,7 +5,7 @@ import { createContext, useState } from "react";
 export const DataContext = createContext(null);
 
 export function DataProvider({ children }) {
-    const [Aside, setAside] = useState([]);
+    const [Aside, setAside] = useState();
 
     return (
         <DataContext.Provider value={{ Aside, setAside }}>
