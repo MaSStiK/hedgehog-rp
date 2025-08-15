@@ -1,7 +1,7 @@
 # Hedgehog RP (Next.js)
 
 > **Версия:** `v2.0.0`  
-> **Legacy (React):** [hedgehog-rp-legacy](https://github.com/username/hedgehog-rp-legacy)
+> **Legacy (React):** [hedgehog-rp-legacy](https://github.com/MaSStiK/hedgehog-rp-legacyy)
 
 **Hedgehog RP** — это социальная сеть для ролевой игры внутри нашей вселенной.  
 Проект разработан на **Next.js** для высокой производительности, удобного взаимодействия и расширяемости.
@@ -10,9 +10,9 @@
 
 **Главный Разработчик**
 
-- 📱 Telegram: [@dev_username](https://t.me/MaSStiK)
+- 📱 Telegram: [@MaSStiK](https://t.me/MaSStiK)
 
 **Создатель проекта**
 
-- 📱 Telegram: [@creator_username](https://t.me/hedgehogia2805)
+- 📱 Telegram: [@hedgehogia2805](https://t.me/hedgehogia2805)
 - ✨ Принимает новых участников в проект
