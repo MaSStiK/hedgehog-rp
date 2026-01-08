@@ -6,8 +6,6 @@
 @import "./elements/page-loading.css";
 @import "./elements/elements.css";
 
-@import "./themes/theme.css";
-
 
 :root {
     /* Основные цвета */
