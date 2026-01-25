@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import clsx from "clsx";
 
@@ -35,11 +34,11 @@ export default function UIButton({
     const classes = clsx(
         "ui-button",
         {
-            "ui-button_small": small, // Маленький
-            "ui-button_round": round, // Скругленные углы
-            "ui-button_width100": width100, // Кнопка во всю ширину
-            "ui-button_atStart": atStart, // Контент кнопки в начале
-            "ui-button_phoneTextHide": phoneTextHide, // Текст кнопки скрывается на телефоне
+            "ui-button--small": small, // Маленький
+            "ui-button--round": round, // Скругленные углы
+            "ui-button--width100": width100, // Кнопка во всю ширину
+            "ui-button--atStart": atStart, // Контент кнопки в начале
+            "ui-button--phoneTextHide": phoneTextHide, // Текст кнопки скрывается на телефоне
         },
         className
     );

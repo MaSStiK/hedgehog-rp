@@ -1,11 +1,13 @@
-@import "./elements/text.css";
-@import "./elements/link.css";
-@import "./elements/button.css";
-@import "./elements/input.css";
-@import "./elements/select.css";
-@import "./elements/page-loading.css";
-@import "./elements/elements.css";
+@import "./base/typography.css";
+@import "./base/flex.css";
 
+@import "./UI/button.css";
+@import "./UI/input.css";
+@import "./UI/input-radio.css";
+@import "./UI/input-checkbox.css";
+@import "./UI/select.css";
+
+@import "./themes/default.css";
 
 :root {
     /* Основные цвета */
@@ -16,10 +18,6 @@
     /* Бордеры */
     --border-primary: rgb(63, 65, 67);
     --border-radius: 8px;
-
-    /* Отступы */
-    --gap-small: 12px;
-    --gap-medium: 20px;
 
     /* Ширина scrollbar */
     --scrollbar-width: 6px;
@@ -36,7 +34,7 @@
     --z-loading: 100;   /* Загрузка (над модальным окном) */
 }
 
-/* Контент в 100% */
+/* Мобильная версия */
 @media screen and (max-width: 900px) {
     /* Полоса прокрутки тоньше на телефоне */
     :root {

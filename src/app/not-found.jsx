@@ -1,7 +1,7 @@
 import Link from "next/link"
 import UIButton from "@/components/UI/UIButton/UIButton"
 
-import "@/app/styles/Not-found.css"
+import "@/app/styles/layout/not-found.css"
 
 export default function NotFound() {
     return (

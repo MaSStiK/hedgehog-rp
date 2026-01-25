@@ -1,16 +1,16 @@
 #aside-wrapper {
     height: fit-content;
     position: sticky;
-    top: var(--gap-medium);
-    /* right: calc((var(--gap-medium) + 316px) * -1); */
+    top: var(--gap-5);
+    /* right: calc((var(--gap-5) + 316px) * -1); */
 }
 
 aside {
     width: 316px;
     display: flex;
     flex-direction: column;
-    gap: var(--gap-small);
-    padding: var(--gap-small) 0;
+    gap: var(--gap-3);
+    padding: var(--gap-3) 0;
 
     border-radius: calc(var(--border-radius) * 2);
     background-color: rgb(14, 17, 19);
@@ -20,5 +20,5 @@ aside section {
     background-color: transparent;
     border: none;
     border-radius: 0;
-    padding: 0 var(--gap-small);
+    padding: 0 var(--gap-3);
 }

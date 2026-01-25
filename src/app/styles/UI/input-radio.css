@@ -1,0 +1,29 @@
+/* Радио инпут */
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    appearance: none;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    visibility: hidden;
+}
+
+input[type="radio"]:checked::before {
+    visibility: visible;
+}

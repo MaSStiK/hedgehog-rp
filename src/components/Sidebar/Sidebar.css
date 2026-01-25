@@ -1,0 +1,7 @@
+.sidebar {
+    min-width: calc(var(--gap-5) + 230px + var(--gap-5));
+    height: calc(100% - var(--header-height)); /* Высота во всю страницу */
+    padding: var(--gap-5);
+    border-right: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+}

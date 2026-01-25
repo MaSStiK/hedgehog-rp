@@ -9,7 +9,7 @@ export default function Header() {
                 <Link href="/">
                     <Image
                         src="/assets/logotype.png"
-                        alt="logotype"
+                        alt="Hedgehog-RP logotype"
                         width={52}
                         height={52}
                         draggable={false}

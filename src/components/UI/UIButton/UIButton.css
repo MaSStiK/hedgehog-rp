@@ -1,45 +1,44 @@
 .ui-button {
-    width: fit-content; /* Ширина кнопки зависит от контента  и обтягивает его*/
+    width: fit-content; /* Ширина кнопки зависит от контента и обтягивает его*/
     min-width: var(--button-height); /* Минимальная ширина кнопки является высота и получается квадратная форма */
-    gap: 0;
+    gap: var(--gap-1);
 }
 
 /* Маленький текст */
-.ui-button_small p {
+.ui-button--small p {
     font-size: var(--p-small);
 }
 
 /* Скругленные углы */
-.ui-button_round {
+.ui-button--round {
     border-radius: 18px;
-    padding: var(--button-padding) 8px;
+    padding: var(--gap-1) 8px;
 }
 
 /* Отключили gap у кнопки и даем тексту отступ с обеих сторон 4px */
 .ui-button p {
     text-align: left;
-    padding: 0 var(--button-gap);
 }
 
 /* Кнопка во всю ширину */
-.ui-button_width100 {
+.ui-button--idth100 {
     width: 100%;
 }
 
 /* Контент кнопки слева, а не по центру */
-.ui-button_atStart {
+.ui-button--atStart {
     justify-content: flex-start;
 }
 
 /* Иконка в кнопке чуть меньше кнопки */
 .ui-button img {
-    width: var(--button-img);
-    height: var(--button-img);
+    width: var(--button-img-size);
+    height: var(--button-img-size);
 }
 
 /* Мобильное сжатие */
 @media screen and (max-width: 400px) {
-    .ui-button_phoneTextHide p {
+    .ui-button--phoneTextHide p {
         display: none;
     }
 }

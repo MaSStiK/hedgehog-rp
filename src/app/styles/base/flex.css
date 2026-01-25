@@ -1,0 +1,39 @@
+:root {
+    /* Отступы между и внутри блоков */
+    --gap-1: 4px;
+    --gap-2: 8px;
+    --gap-3: 12px;
+    --gap-4: 16px;
+    --gap-5: 20px;
+}
+
+/* Флекс строка */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-3);
+}
+
+/* Флекс колонна */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+}
+
+/* Флекс перенос строки */
+.flex-wrap { flex-wrap: wrap; }
+
+/* Отступы между и внутри блоков */
+.gap-1 { gap: var(--gap-1); }
+.gap-2 { gap: var(--gap-2); }
+.gap-3 { gap: var(--gap-3); }
+.gap-4 { gap: var(--gap-4); }
+.gap-5 { gap: var(--gap-5); }
+
+/* Разделитель */
+hr {
+    width: 100%;
+    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
+    border-bottom: 1px solid rgb(38, 41, 43);
+}

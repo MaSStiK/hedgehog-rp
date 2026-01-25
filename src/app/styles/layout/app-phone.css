@@ -1,0 +1,44 @@
+/* Мобильная версия */
+@media screen and (max-width: 900px) {
+    /* Основной контейнер всего контента */
+    #root {
+        width: 100%; /* Ширина во всю страницу */
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Блок навигации */
+    aside {
+        width: 100%; /* Ширина во всю страницу */
+        height: 50px; /* 50px высота кнопок */
+
+        background-color: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-primary);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    /* Блок страницы */
+    article {
+        width: 100%; /* Ширина во всю страницу */
+
+        /* Отступ сверху 50px + 12px, Отступ снизу равен отступу между элементами, справа - 12 - ширина scroll */
+        padding: calc(50px + var(--gap-3))
+                 calc(var(--gap-3) - var(--scrollbar-width))
+                 var(--gap-3)
+                 var(--gap-3);
+    }
+
+    /* Добавляем scrollbar отступ снизу */
+    article::-webkit-scrollbar-track {
+        margin: calc(50px + var(--gap-3)) 0 var(--gap-3) 0;
+    }
+
+    /* Блок с контентом */
+    section {
+        margin: 0 auto; /* По центру страницы */
+    }
+}

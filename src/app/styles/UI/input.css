@@ -1,0 +1,86 @@
+:root {
+    /* Размеры инпута такие же как у кнопки */
+    --input-height: 36px;
+    --input-img-size: 24px;
+
+    --border-input: #666666;
+    --border-input-focus: #1CA02C;
+    --border-input-error: #D60027;
+
+    --range-thumb: #999999;
+}
+
+/* Основные стили для инпута и textarea */
+input[type=text], textarea, .textarea {
+    display: block;
+    width: 100%;
+    height: var(--input-height);
+    padding: var(--gap-1); /* Вертикальный отступ больше */
+
+    outline: none;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-input);
+    border-radius: var(--border-radius);
+
+    color: var(--text-white);
+    font-size: var(--p);
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+/* Стили только для textarea */
+textarea {
+    height: calc(var(--input-height) * 3); /* Высота по умолчанию */
+    min-height: var(--input-height); /* Минимальный размер равен размеру инпута */
+    max-height: calc(var(--input-height) * 6); /* Максимальный размер */
+    resize: vertical; /* Растягивание только по вертикале */
+}
+
+
+/* Текст стилизованный под textarea */
+.textarea {
+    height: auto;
+    padding: var(--gap-1); /* Вертикальный отступ такой же как и горизонтальный */
+    white-space: pre-wrap;
+    color: var(--text-light);
+    cursor: not-allowed;
+}
+
+
+/* Неизменяемые input и textarea помечаем серым цветом */
+:is(input[type=text], textarea):is(:read-only, :disabled) {
+    color: var(--text-gray);
+    cursor: not-allowed;
+}
+
+/* Неизменяемые textarea, делаем его минимального размера и неизменяемым по высоте */
+textarea:is(:read-only, :disabled) {
+    height: auto;
+    min-height: var(--input-height);
+    max-height: unset;
+    resize: none; /* Отключаем растягивание */
+}
+
+
+/* При фокусе input или textarea (Кроме неизменяемых) */
+/* Толстая зеленая обводка */
+:is(input[type=text], textarea):not(:read-only):focus {
+    border: 1px solid var(--border-input-focus);
+    outline: 1px solid var(--border-input-focus);
+}
+
+/* При фокусе input или textarea (Только неизменяемые) */
+/* Толстая серая обводка */
+:is(input[type=text], textarea):read-only:focus {
+    border: 1px solid var(--border-input);
+    outline: 1px solid var(--border-input);
+}
+
+
+/* Темный текст textarea */
+:is(input[type=text], textarea)::placeholder { color: var(--text-dark); }
+
+/* Фикс подсветки авто-ввода */
+:is(input[type=text], textarea):is(:-webkit-autofill, :-webkit-autofill:focus) {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}

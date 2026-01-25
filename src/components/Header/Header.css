@@ -1,18 +1,18 @@
 :root {
-    --header-height: 61px;
+    --header-height: 60px;
 }
 
-/* Хедер */
 header {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    padding: 0 var(--gap-medium);
+    padding: 0 var(--gap-5);
 
     border-bottom: 1px solid var(--border-primary);
     background-color: var(--bg-primary);
 }
 
+/* Блок с логотипом и названием */
 .header-logo {
     display: flex;
     align-items: center;
