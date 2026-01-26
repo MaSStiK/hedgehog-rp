@@ -77,23 +77,27 @@ export default function Button({
     if (href) {
         // Если ссылка внешняя - возвращаем просто тег a
         if (href.startsWith("http")) {
-            return <a {...commonProps}
-                aria-disabled={disabled}
-                href={href}
-                target={target || "_blank"}
-                rel={rel || "noopener noreferrer"}
-            >
-                {content}
-            </a>
+            return (
+                <a {...commonProps}
+                    aria-disabled={disabled}
+                    href={href}
+                    target={target || "_blank"}
+                    rel={rel || "noopener noreferrer"}
+                >
+                    {content}
+                </a>
+            )
         }
 
         // Если внутренняя ссылка
-        return <Link {...commonProps}
-            aria-disabled={disabled}
-            href={href}
-        >
-            {content}
-        </Link>
+        return (
+            <Link {...commonProps}
+                aria-disabled={disabled}
+                href={href}
+            >
+                {content}
+            </Link>
+        )
     }
 
     // Если обычная кнопка
