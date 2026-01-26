@@ -30,10 +30,3 @@
 .gap-3 { gap: var(--gap-3); }
 .gap-4 { gap: var(--gap-4); }
 .gap-5 { gap: var(--gap-5); }
-
-/* Разделитель */
-hr {
-    width: 100%;
-    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
-    border-bottom: 1px solid rgb(38, 41, 43);
-}

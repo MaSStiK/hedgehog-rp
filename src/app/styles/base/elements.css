@@ -1,0 +1,25 @@
+/* Разделитель */
+hr {
+    width: 100%;
+    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
+    border-bottom: 1px solid var(--border-primary);
+}
+
+/* Темный разделитель для aside */
+hr.dark {
+    width: 100%;
+    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
+    border-bottom: 1px solid var(--border-aside);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

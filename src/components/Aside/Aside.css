@@ -13,7 +13,7 @@ aside {
     padding: var(--gap-3) 0;
 
     border-radius: calc(var(--border-radius) * 2);
-    background-color: rgb(14, 17, 19);
+    background-color: var(--bg-aside);
 }
 
 aside section {

@@ -37,7 +37,7 @@ main {
 }
 
 
-/* Блок контейнером страницы */
+/* Контейнер страницы */
 article {
     width: min(730px, 100%);
     height: fit-content;

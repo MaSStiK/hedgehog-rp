@@ -5,18 +5,17 @@ import "./Header.css"
 export default function Header() {
     return (
         <header>
-            <div className="flex-row header-logo">
-                <Link href="/">
-                    <Image
+            <Link href="/" className="flex-row header-logo text-white text-decoration-none">
+                <Image
                         src="/assets/logotype.png"
                         alt="Hedgehog-RP logotype"
                         width={52}
                         height={52}
                         draggable={false}
+                        priority
                     />
-                </Link>
-                <h1>Hedgehog RP</h1>
-            </div>
+                <p className="fs-xlarge fw-bold">Ежиное РП</p>
+            </Link>
         </header>
     )
 }

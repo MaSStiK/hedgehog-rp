@@ -1,42 +1,65 @@
 "use client"
-import { useContext } from "react"
-import { DataContext } from "@/components/Context"
-import UIButton from "@/components/UI/UIButton/UIButton"
+import Link from "next/link"
+import Button from "@/components/UI/Button/Button"
 
-const text = `This is a test text used for checking layout, typography, and content placement.
+const text = `p textarea
+This is a test text used for checking layout, typography, and content placement.
 It has no specific meaning and is intended solely for demonstration purposes.
 Designers and developers often use such text to preview how real content will appear in an interface or document.`
 
-const text2 = `This is a test text used for checking layout, typography, and content placement.`
+const text2 = `readOnly This is a test text.`
 
 export default function Dev() {
-    const Context = useContext(DataContext)
     
     return (
         <article>
             <section className="flex-col">
                 <div className="flex-row">
-                    <UIButton
-                        text="Обычная"
+                    <Button
+                        text="Gray Button" title="Gray Button"
                     />
-                    <UIButton
+                    <Button
                         className="green"
-                        text="Зеленая"
+                        text="Green Button" title="Green Button"
                     />
-                    <UIButton
+                    <Button
                         className="red"
-                        text="Красная"
+                        text="Red Button" title="Red Button"
                     />
-                    <UIButton
+                    <Button
                         className="tp"
-                        text="Прозрачная"
+                        text="Transparent Button" title="Transparent Button"
                     />
                 </div>
 
-                <input type="text" placeholder="placeholder" />
+                <hr />
+
+                <div className="flex-row">
+                    <Button
+                        text="UI Button link" title="Button link"
+                        href="#"
+                    />
+                    <Link className="button" href="#">button link</Link>
+                    <button className="fit">fit content</button>
+                </div>
+
+                <hr />
+
+                <p>default text</p>
+                <Link href="#" className="text-link">default link</Link>
+                <p className="fs-xxlarge">fs-xxlarge</p>
+                <p className="fs-xlarge">fs-xlarge</p>
+                <p className="fs-large ">fs-large </p>
+                <p className="fs-medium">fs-medium</p>
+                <p className="fs-small">fs-small</p>
+
+                <hr />
+
+                <input type="text" placeholder="default input" />
+                <input type="text" className="error" placeholder="error input" />
                 <input type="text" value="read only" readOnly />
                 <input type="text" value="disabled" disabled />
-                <textarea placeholder="placeholder" maxLength={100}></textarea>
+                <textarea placeholder="default textarea" maxLength={100}></textarea>
                 <p className="textarea">{text}</p>
                 <textarea readOnly value={text2}></textarea>
             </section>

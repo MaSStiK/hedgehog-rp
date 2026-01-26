@@ -14,11 +14,5 @@ header {
 
 /* Блок с логотипом и названием */
 .header-logo {
-    display: flex;
     align-items: center;
-}
-
-.header-logo a {
-    width: 52px;
-    height: 52px;
 }

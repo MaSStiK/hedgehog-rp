@@ -19,7 +19,7 @@
 /* Основные стили для кнопки (по умолчанию серая) */
 button, .button {
     width: min(200px, 100%);
-    min-height: var(--button-height);
+    min-height: var(--button-height); /* Минимальная ширина кнопки является высота и получается квадратная форма */
     padding: var(--gap-1);
 
     display: flex;
@@ -28,7 +28,7 @@ button, .button {
     gap: var(--gap-1);
 
     color: var(--text-light);
-    font-size: var(--p);
+    font-size: var(--fs-medium);
     text-decoration: none;
 
     outline: none;
@@ -73,3 +73,6 @@ button, .button {
     :is(button, .button).tp:active       { background-color: var(--button-tp-hover); }
     :is(button, .button):disabled:active { background-color: var(--button-disabled); }
 }
+
+/* Минимальный размер кнопки */
+:is(button, .button).fit { width: fit-content; }

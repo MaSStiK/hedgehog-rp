@@ -23,7 +23,7 @@ input[type=text], textarea, .textarea {
     border-radius: var(--border-radius);
 
     color: var(--text-white);
-    font-size: var(--p);
+    font-size: var(--fs-medium);
     line-height: 1.5;
     text-decoration: none;
 }
@@ -65,15 +65,22 @@ textarea:is(:read-only, :disabled) {
 /* При фокусе input или textarea (Кроме неизменяемых) */
 /* Толстая зеленая обводка */
 :is(input[type=text], textarea):not(:read-only):focus {
-    border: 1px solid var(--border-input-focus);
+    border-color: var(--border-input-focus);
     outline: 1px solid var(--border-input-focus);
 }
 
 /* При фокусе input или textarea (Только неизменяемые) */
 /* Толстая серая обводка */
 :is(input[type=text], textarea):read-only:focus {
-    border: 1px solid var(--border-input);
+    border-color: var(--border-input);
     outline: 1px solid var(--border-input);
+}
+
+
+/* Если инпут с ошибкой */
+:is(input[type=text], textarea).error {
+    border-color: var(--border-input-error);
+    outline: 1px solid var(--border-input-error);
 }
 
 

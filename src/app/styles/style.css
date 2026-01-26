@@ -1,5 +1,6 @@
 @import "./base/typography.css";
 @import "./base/flex.css";
+@import "./base/elements.css";
 
 @import "./UI/button.css";
 @import "./UI/input.css";
@@ -11,27 +12,18 @@
 
 :root {
     /* Основные цвета */
-    --bg-primary: rgb(20, 24, 27);
-    --bg-secondary: rgb(28, 32, 36);
+    --bg-primary:     rgb(20, 24, 27);
+    --bg-secondary:   rgb(28, 32, 36);
+    --bg-aside:       rgb(14, 17, 19);
     --bg-transparent: rgba(14, 17, 19, 80%);
 
     /* Бордеры */
     --border-primary: rgb(63, 65, 67);
+    --border-aside:   rgb(38, 41, 43);
     --border-radius: 8px;
 
     /* Ширина scrollbar */
     --scrollbar-width: 6px;
-
-    /* Уровни слоев */
-    --z-under: -1;      /* Под основным контентом */
-    --z-main: 0;        /* Основной контент */
-    --z-over: 1;        /* Над основным контентом */
-    --z-above: 2;       /* Над страницей, но под навигацией */
-    --z-nav-bg: 3;      /* Подложка навигации (Черный фон) */
-    --z-nav-content: 4; /* Верх навигации */
-    --z-nav: 5;         /* Меню навигации */
-    --z-modal: 10;      /* Модальное окно (над навигацией) */
-    --z-loading: 100;   /* Загрузка (над модальным окном) */
 }
 
 /* Мобильная версия */

@@ -1,11 +1,16 @@
 :root {
     /* Размеры текста */
-    --h1: 32px;
-    --h2: 28px;
-    --h3: 24px;
-    --p: 16px;
-    --p-small: 14px;
-    --p-big: 40px;
+    --fs-xxlarge: 32px;
+    --fs-xlarge:  28px;
+    --fs-large:   24px;
+    --fs-medium:  16px;
+    --fs-small:   14px;
+
+    /* Жирность текста */
+    --fw-bold:      700;
+    --fw-semibold:  600;
+    --fw-medium:    500;
+    --fw-regular:   400;
 
     /* Цвет текста */
     --text-white: rgba(255, 255, 255, 1);
@@ -21,43 +26,42 @@
 /* Мобильная версия */
 @media screen and (max-width: 900px) {
     :root {
-        --h1: 20px;
-        --h2: 20px;
-        --h3: 16px;
-        --h4: 16px;
-        --p: 14px;
+        --fs-xxlarge: 28px;
+        --fs-xlarge:  24px;
+        --fs-large:   20px;
+        --fs-medium:  14px;
+        --fs-small:   12px;
     }
 }
 
 * {
     font-family: var(--font-montserrat);
+}
+
+body {
     color: var(--text-light);
-    font-size: var(--p);
-    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
-/* Стили для текста */
-h1, .h1 { font-size: var(--h1); line-height: 1.2; }
-h2, .h2 { font-size: var(--h2); line-height: 1.25; }
-h3, .h3 { font-size: var(--h3); line-height: 1.3; }
-h4, .h4 { font-size: var(--h4); line-height: 1.35; }
-p, .p { font-size: var(--p); white-space: pre-wrap; line-height: 1.5; }
+/* Размер текста */
+h1, .h1 { font-size: var(--fs-xlarge); line-height: 1.2; }
+h2, .h2 { font-size: var(--fs-xlarge); line-height: 1.25; }
+h3, .h3 { font-size: var(--fs-large); line-height: 1.3; }
+h4, .h4 { font-size: var(--fs-large); line-height: 1.35; }
+p, .p, label { font-size: var(--fs-medium); line-height: 1.5; }
+.fs-xxlarge  { font-size: var(--fs-xxlarge); }
+.fs-xlarge   { font-size: var(--fs-xlarge); }
+.fs-large    { font-size: var(--fs-large); }
+.fs-medium   { font-size: var(--fs-medium); }
+.fs-small    { font-size: var(--fs-small); }
 
-small, .small {
-    font-size: var(--p-small);
-    font-weight: 300;
-}
+/* Толщина текста */
+.fw-bold     { font-weight: var(--fw-bold); }
+.fw-semibold { font-weight: var(--fw-semibold); }
+.fw-medium   { font-weight: var(--fw-medium); }
+.fw-regular  { font-weight: var(--fw-regular); }
 
-big, .big { font-size: var(--p-big); }
-
-strong, .strong { font-weight: 600; }
-
-/* Лейбл инпута */
-label {
-    font-size: var(--p);
-}
-
-/* Стили для цвета текста */
+/* Цвет текста */
 .text-white { color: var(--text-white); }
 .text-light { color: var(--text-light); }
 .text-gray  { color: var(--text-gray);  }
@@ -65,6 +69,9 @@ label {
 .text-black { color: var(--text-black); }
 .text-red   { color: var(--text-red);   }
 
+
+/* Текст с переносами строк */
+.text-pre { white-space: pre-wrap; }
 
 /* Текст обрезаемый контейнером */
 .text-cut {
@@ -80,31 +87,31 @@ label {
     background-color: var(--bg-primary);
 }
 
-/* Ссылка (Указывается для тега <a> (Link) если в нем только текст) */
+/* Текст без декораций */
+.text-decoration-none { text-decoration: none; }
+
+/* Подчеркнутый текст */
+.text-underline { text-decoration: underline; }
+
+/* Ссылка (Link в том числе) */
 a {
-    text-decoration: none;
-    cursor: pointer;
+    font-size: var(--fs-medium);
+    color: var(--text-link);
 }
 
 .text-link {
-    font-size: var(--p);
+    font-size: var(--fs-medium);
     color: var(--text-link);
+    text-decoration: underline;
     cursor: pointer;
-    
 }
 
-/* Наведение на пк */
-@media (hover: hover) {
-    .text-link:hover,
-    .text-link:focus-visible {
-        text-decoration: underline;
-    }
-}
+/* На пк ссылка подчеркивается при наведении */
+/* @media (hover: hover) {
+    .text-link:is(:hover, :focus-visible) { text-decoration: underline; }
+} */
 
-/* Клик на телефоне */
-@media (hover: none) {
-    /* На мобильных девайсах ссылки подчеркнуты */
-    .text-link {
-        text-decoration: underline;
-    }
-}
+/* На мобильных девайсах ссылки подчеркнуты изначально */
+/* @media (hover: none) {
+    .text-link { text-decoration: underline; }
+} */

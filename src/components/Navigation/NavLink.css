@@ -12,6 +12,7 @@
     align-items: center;
     gap: 12px;
 
+    text-decoration: none;
     background-color: var(--nav-link);
     border-radius: 8px;
 }

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import UIButton from "@/components/UI/UIButton/UIButton"
+import Button from "@/components/UI/Button/Button"
 
 import "@/app/styles/layout/not-found.css"
 
@@ -9,7 +9,7 @@ export default function NotFound() {
             <big>404 Not Found</big>
             <h1>Страница не найдена!</h1>
             <Link href="/">
-                <UIButton
+                <Button
                     src={"/svg/Home.svg"}
                     text={"На главную"}
                     width100
