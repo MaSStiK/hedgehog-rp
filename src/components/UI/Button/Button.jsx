@@ -27,7 +27,7 @@ export default function Button({
     href, target, rel, 
 
     // Пропсы для отображения картинки
-    src, alt, 
+    icon, alt="button-image",
     
     // Модификаторы кнопки
     small,
@@ -50,25 +50,15 @@ export default function Button({
         className
     );
 
-    const commonProps = {
-        id,
-        className: classes,
-        style,
-        title,
-    }
+    const commonProps = { id, className: classes, style, title }
 
-    // Отображаем картинку если прокинут src
-    // Отображаем текст если прокинут text
+    const Icon = typeof icon === "function" ? icon : null // Если в icon передаем иконку из "lucide-react" - отображаем его как компонент
+    const src = typeof icon === "string" ? icon : null // Если в icon передаем ссылку на картинку - отображаем как Image src
     const content = (
         <>
-            {src && (
-                <Image
-                    src={src} alt={alt || "button-image"}
-                    width={24} height={24}
-                    draggable="false"
-                />
-            )}
-            {text && <p>{text}</p>}
+            {Icon && <Icon size={24} />}
+            {src && <Image src={src} alt={alt} width={24} height={24} />}
+            {text && <span>{text}</span>}
         </>
     )
 

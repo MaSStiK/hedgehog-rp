@@ -12,14 +12,15 @@
 
 :root {
     /* Основные цвета */
-    --bg-primary:     rgb(20, 24, 27);
-    --bg-secondary:   rgb(28, 32, 36);
-    --bg-aside:       rgb(14, 17, 19);
-    --bg-transparent: rgba(14, 17, 19, 80%);
+    --bg-primary:     #030712; /* Header и Sidebar */
+    --bg-secondary:   #1C2024; /* Внутри контента */
+    --bg-transparent: #0E1113CC; /* Пока не используется (для анимации загрузки поверх контента) */
 
     /* Бордеры */
-    --border-primary: rgb(63, 65, 67);
-    --border-aside:   rgb(38, 41, 43);
+    --border-primary:   #1F2937; /* Header и Sidebar */
+    --border-secondary: #3F4143; /* Внутри контента */
+    --border-accent:    #EA580C;
+
     --border-radius: 8px;
 
     /* Ширина scrollbar */
@@ -60,5 +61,5 @@
 /* Маркер прокрутки */
 *::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
-    background-color: var(--border-primary);
+    background-color: var(--border-secondary);
 }

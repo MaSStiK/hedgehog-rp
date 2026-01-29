@@ -5,6 +5,7 @@
     --fs-large:   24px;
     --fs-medium:  16px;
     --fs-small:   14px;
+    --fs-tiny:    12px;
 
     /* Жирность текста */
     --fw-bold:      700;
@@ -13,13 +14,15 @@
     --fw-regular:   400;
 
     /* Цвет текста */
-    --text-white: rgba(255, 255, 255, 1);
-    --text-light: rgb(255, 255, 255, 0.9); /* 90% прозрачность */
-    --text-gray: rgba(255, 255, 255, 0.5); /* 50% прозрачность */
-    --text-dark: rgba(255, 255, 255, 0.3); /* 30% прозрачность */
-    --text-black: rgba(0, 0, 0, 1);
-    --text-red: #D60027;
-    --text-link: #8B81E6;
+    --text-white:  #FFFFFF;
+    --text-light:  #FFFFFFE6; /* 90% прозрачность */
+    --text-gray:   #FFFFFF80; /* 50% прозрачность */
+    --text-dark:   #FFFFFF4D; /* 30% прозрачность */
+    --text-black:  #000000;
+    --text-green:  #22c55e;
+    --text-orange: #EA580C;
+    --text-red:    #D60027;
+    --text-link:   #8B81E6;
     --text-input-label: #B6B6B6;
 }
 
@@ -31,6 +34,7 @@
         --fs-large:   20px;
         --fs-medium:  14px;
         --fs-small:   12px;
+        --fs-tiny :   10px;
     }
 }
 
@@ -48,12 +52,13 @@ h1, .h1 { font-size: var(--fs-xlarge); line-height: 1.2; }
 h2, .h2 { font-size: var(--fs-xlarge); line-height: 1.25; }
 h3, .h3 { font-size: var(--fs-large); line-height: 1.3; }
 h4, .h4 { font-size: var(--fs-large); line-height: 1.35; }
-p, .p, label { font-size: var(--fs-medium); line-height: 1.5; }
+p, .p, span, label { font-size: var(--fs-medium); line-height: 1.5; }
 .fs-xxlarge  { font-size: var(--fs-xxlarge); }
 .fs-xlarge   { font-size: var(--fs-xlarge); }
 .fs-large    { font-size: var(--fs-large); }
 .fs-medium   { font-size: var(--fs-medium); }
 .fs-small    { font-size: var(--fs-small); }
+.fs-tiny     { font-size: var(--fs-tiny); }
 
 /* Толщина текста */
 .fw-bold     { font-weight: var(--fw-bold); }
@@ -62,13 +67,14 @@ p, .p, label { font-size: var(--fs-medium); line-height: 1.5; }
 .fw-regular  { font-weight: var(--fw-regular); }
 
 /* Цвет текста */
-.text-white { color: var(--text-white); }
-.text-light { color: var(--text-light); }
-.text-gray  { color: var(--text-gray);  }
-.text-dark  { color: var(--text-dark);  }
-.text-black { color: var(--text-black); }
-.text-red   { color: var(--text-red);   }
-
+.text-white  { color: var(--text-white); }
+.text-light  { color: var(--text-light); }
+.text-gray   { color: var(--text-gray);  }
+.text-dark   { color: var(--text-dark);  }
+.text-black  { color: var(--text-black); }
+.text-green  { color: var(--text-green); }
+.text-orange { color: var(--text-orange); }
+.text-red    { color: var(--text-red);   }
 
 /* Текст с переносами строк */
 .text-pre { white-space: pre-wrap; }

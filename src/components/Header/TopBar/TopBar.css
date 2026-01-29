@@ -1,0 +1,11 @@
+/* Блок с информацией над header */
+.top-bar {
+    height: 33px;
+    padding: var(--gap-2) var(--gap-6);
+    justify-content: space-between;
+    background-color: #000000;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+/* Фиксированная ширина */
+.top-bar__server { width: 258px; }

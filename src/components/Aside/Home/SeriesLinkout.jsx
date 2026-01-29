@@ -1,27 +1,19 @@
 "use client"
-import { useEffect } from "react"
 import Image from "next/image"
-import { useAtomValue, useSetAtom } from "jotai"
-import { homeAsideVideoData, loadHomeAsideVideoAtom } from "@/atoms/homeAside"
+import { useAtomValue } from "jotai"
+import { homeAsideVideoLoadableAtom } from "@/atoms/HomeAsideVideo"
 
 export default function SeriesLinkout() {
-    const loadVideoData = useSetAtom(loadHomeAsideVideoAtom)
-    const videoData = useAtomValue(homeAsideVideoData)
+    const video = useAtomValue(homeAsideVideoLoadableAtom)
     let content;
 
-    // Запускаем поиск при первой отрисовке
-    useEffect(() => {
-        loadVideoData()
-    }, [loadVideoData])
-
-    if (videoData.status === "idle" || videoData.status === "loading") {
+    if (video.state === "loading") {
         content = <p>Загрузка...</p>
-    } else if (videoData.status === "error") {
+    } else if (video.state === "hasError") {
+        console.error(video.error)
         content = <p>Ошибка загрузки</p>
-    } else if (videoData.status === "success") {
-        content = <Series data={videoData.data} />
     } else {
-        content = <p>Ошибка videoData.status "{videoData.status}"</p>
+        content = <Series data={video.data} />
     }
 
     return (

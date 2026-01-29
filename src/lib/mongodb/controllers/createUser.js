@@ -1,11 +1,8 @@
-import User from "../models/user"
+import MongoConnect from "../"
+import User from "../models/User"
 
 export default async function createUser(name, bio="") {
-    const newUser = new User({ name, bio })
-
-    try {
-        await newUser.save()
-    } catch (error) {
-        console.log("error createTodo");
-    }
+    await MongoConnect()
+    const user = await User.create({ name, bio })
+    return user
 }

@@ -11,7 +11,7 @@
 }
 
 /* Маленький текст */
-.button--small p { font-size: var(--fs-small); }
+.button--small span { font-size: var(--fs-small); }
 
 /* Скругленные углы */
 .button--round { border-radius: 18px; padding: var(--gap-1) 8px; }
@@ -24,5 +24,5 @@
 
 /* Модификатор для мобильного скрытия текста */
 @media screen and (max-width: 400px) { 
-    .button--phoneTextHide p { display: none; }
+    .button--phoneTextHide span { display: none; }
 }

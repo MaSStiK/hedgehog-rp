@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Aside from "@/components/Aside/Aside"
 import HomeAside from "@/components/Aside/Home/HomeAside"
-import Button from "@/components/UI/Button/Button"
 import "@/app/home/home-page.css"
 
 export default function Home() {

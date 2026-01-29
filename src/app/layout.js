@@ -1,5 +1,4 @@
 import { montserrat, _metadata, _viewport } from "@/components/metadata"
-import JotaiProvider from "@/atoms/provider"
 import Header from "@/components/Header/Header"
 import Sidebar from "@/components/Sidebar/Sidebar"
 
@@ -14,15 +13,13 @@ export default function RootLayout({ children }) {
     return (
         <html lang="ru">
             <body className={montserrat.className}>
-                <JotaiProvider>
-                    <Header />
-                    <div id="layout">
-                        <Sidebar />
-                        <main>
-                            {children}
-                        </main>
-                    </div>
-                </JotaiProvider>
+                <Header />
+                <div id="layout">
+                    <Sidebar />
+                    <main>
+                        {children}
+                    </main>
+                </div>
             </body>
         </html>
     )

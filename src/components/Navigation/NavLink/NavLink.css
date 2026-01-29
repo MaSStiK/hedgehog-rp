@@ -1,0 +1,53 @@
+/* Кнопка навигации */
+.nav-link {
+    --nav-link-bg:           #072b1600;
+    --nav-link-color:        #20AA6B;
+    --nav-link-hover-bg:     #072b16;
+    --nav-link-hover-color:  #16C973;
+    --nav-link-active-bg:    #09361d;
+    --nav-link-active-color: #7BF1A8;
+
+    width: 100%;
+    height: 36px;
+    padding: var(--gap-2);
+    background-color: var(--nav-link-bg);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-2);
+
+    text-decoration: none;
+
+    & span, svg { color: var(--nav-link-color); }
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .nav-link:is(:hover, :focus-visible) {
+        background-color: var(--nav-link-hover-bg);
+        & span, svg { color: var(--nav-link-hover-color); }
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .nav-link:active { 
+        background-color: var(--nav-link-hover-bg);
+        & span, svg { color: var(--nav-link-hover-color); }
+    }
+}
+
+/* Активная ссылка, эффект при наведении не изменяет уже активную ссылку */
+nav .nav-link.active {
+    background-color: var(--nav-link-active-bg);
+    border-left: 2px solid var(--nav-link-active-color);
+    & span, svg { color: var(--nav-link-active-color); }
+}
+
+
+/* Мобильная версия */
+@media screen and (max-width: 900px) {
+    .nav-link svg {
+        width: 14px;
+        height: 14px;
+    }
+}

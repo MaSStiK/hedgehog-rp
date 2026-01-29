@@ -10,7 +10,6 @@ Designers and developers often use such text to preview how real content will ap
 const text2 = `readOnly This is a test text.`
 
 export default function Dev() {
-    
     return (
         <article>
             <section className="flex-col">

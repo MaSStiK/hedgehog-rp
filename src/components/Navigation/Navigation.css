@@ -1,9 +1,4 @@
 /* Навигация */
 nav {
-    display: flex;
-    flex-direction: column;
-}
-
-nav ul hr {
-    margin: 12px 0;
+    padding: var(--gap-2);
 }

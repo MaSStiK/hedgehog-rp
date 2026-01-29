@@ -1,18 +1,26 @@
 :root {
-    --header-height: 60px;
+    /* 33px + 77px */
+    --header-height: 110px;
+    /* todo: Определится с размером */
 }
 
 header {
     height: var(--header-height);
-    display: flex;
-    align-items: center;
-    padding: 0 var(--gap-5);
-
-    border-bottom: 1px solid var(--border-primary);
+    border-bottom: 2px solid var(--border-accent);
     background-color: var(--bg-primary);
+
+    font-family: monospace;
 }
 
-/* Блок с логотипом и названием */
-.header-logo {
-    align-items: center;
+.header__content {
+    padding: var(--gap-2) var(--gap-6);
+}
+
+/* Блок с логотипом и названием сайта */
+.header__content-logo {
+    width: fit-content;    
+}
+
+.header__content-title {
+    font-size: 18px;
 }

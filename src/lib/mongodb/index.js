@@ -1,22 +1,15 @@
-import { MongoClient } from "mongodb"
+import mongoose from "mongoose";
 
 const URI = process.env.MONGODB_URI;
 
-if (!URI) throw new Error("Please add Mongo URI to .env");
+if (!URI) throw new Error("Please add MONGODB_URI to .env");
 
-let client;
-let clientPromise;
+let cached = global.mongoose;
+if (!cached) cached = global.mongoose = { conn: null, promise: null };
 
-if (process.env.NODE_ENV !== "production") {
-    if (!global._mongoClientPromise) {
-        client = new MongoClient(URI);
-        global._mongoClientPromise = client.connect();
-    }
-    clientPromise = global._mongoClientPromise;
-} 
-else {
-    client = new MongoClient(URI);
-    clientPromise = client.connect();
+export default async function MongoConnect() {
+    if (cached.conn) return cached.conn;
+    if (!cached.promise) cached.promise = mongoose.connect(URI, { bufferCommands: false });
+    cached.conn = await cached.promise;
+    return cached.conn;
 }
-
-export default clientPromise;

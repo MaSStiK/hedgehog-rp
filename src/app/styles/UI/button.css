@@ -1,15 +1,15 @@
 :root {
     /* Цвета кнопок */
-    --button-default:       rgb(49, 54, 62);
-    --button-default-hover: rgb(79, 87, 100);
-    --button-green:         rgb(42, 111, 84);
-    --button-green-hover:   rgb(56, 149, 112);
-    --button-red:           rgb(122, 20, 26);
-    --button-red-hover:     rgb(160, 26, 34);
-    --button-tp:            rgba(255, 255, 255, 0%);
-    --button-tp-hover:      rgb(34, 40, 44);
-    --button-active:        rgb(46, 51, 54);
-    --button-disabled:      rgb(46, 44, 53);
+    --button-default:       #31363E;
+    --button-default-hover: #4F5764;
+    --button-green:         #2A6F54;
+    --button-green-hover:   #389570;
+    --button-red:           #7A141A;
+    --button-red-hover:     #A01A22;
+    --button-tp:            transparent;
+    --button-tp-hover:      #22282C;
+    --button-active:        #2E3336;
+    --button-disabled:      #2D2C35;
 
     /* Размеры кнопки такие же как у инпута */
     --button-height: 36px;

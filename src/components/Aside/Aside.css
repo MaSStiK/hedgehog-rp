@@ -6,6 +6,9 @@
 }
 
 aside {
+    --bg-aside:     #030712;
+    --border-aside: #26292B;
+
     width: 316px;
     display: flex;
     flex-direction: column;

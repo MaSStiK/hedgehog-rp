@@ -1,6 +1,21 @@
 "use client"
 import { usePathname } from "next/navigation"
-import NavLink from "./NavLink"
+import NavLink from "./NavLink/NavLink"
+import { 
+    Home,
+    Newspaper,
+    Users,
+    Globe,
+    Map,
+    Tv,
+    Wrench,
+    HelpCircle,
+    Info,
+    Settings,
+    Download,
+    Code
+} from "lucide-react"
+
 import "./Navigation.css"
 
 // Вертикальный список ссылок на страницы платформы
@@ -10,20 +25,20 @@ export default function Navigation() {
 
     return (
         <nav>
-            <ul>
-                <NavLink href="/"           isActive={isActive("/")}           title="Главная"     icon="/svg/Home.svg" />
-                <NavLink href="/news"       isActive={isActive("/news")}       title="Новости"     icon="/svg/News.svg" />
-                <NavLink href="/user"       isActive={isActive("/user")}       title="Участники"   icon="/svg/User.svg" />
-                <NavLink href="/country"    isActive={isActive("/country")}    title="Страны"      icon="/svg/Country.svg" />
-                <NavLink href="https://map.hedgehog-rp.ru"                     title="Карта мира"  icon="/svg/Map.svg" />
-                <NavLink href="https://tv.hedgehog-rp.ru"                      title="Ежиное ТВ"   icon="/svg/Video.svg" />
+            <ul className="flex-col gap-1">
+                <NavLink href="/"           isActive={isActive("/")}           title="/главная"     icon={Home} />
+                <NavLink href="/news"       isActive={isActive("/news")}       title="/новости"     icon={Newspaper} />
+                <NavLink href="/user"       isActive={isActive("/user")}       title="/участники"   icon={Users} />
+                <NavLink href="/country"    isActive={isActive("/country")}    title="/страны"      icon={Globe} />
+                <NavLink href="https://map.hedgehog-rp.ru"                     title="/карта мира"  icon={Map} />
+                <NavLink href="/tools"      isActive={isActive("/utils")}      title="/инструменты" icon={Wrench} />
+                <NavLink href="/support"    isActive={isActive("/support")}    title="/помощь"      icon={HelpCircle} />
+                <NavLink href="/about"      isActive={isActive("/about")}      title="/о нас"       icon={Info} />
+                <NavLink href="https://tv.hedgehog-rp.ru"                      title="#ежиное-тв ↗"   icon={Tv} />
                 <hr />
-                <NavLink href="/tools"      isActive={isActive("/tools")}      title="Инструменты" icon="/svg/Tool.svg" />
-                <NavLink href="/support"    isActive={isActive("/support")}    title="Помощь"      icon="/svg/Help.svg" />
-                <NavLink href="/about"      isActive={isActive("/about")}      title="О нас"       icon="/svg/Info.svg" />
-                <NavLink href="/settings"   isActive={isActive("/settings")}   title="Настройки"   icon="/svg/Settings.svg" />
-                <NavLink href="/changelogs" isActive={isActive("/changelogs")} title="Обновления"  icon="/svg/Update.svg" />
-                <NavLink href="/dev"        isActive={isActive("/dev")}        title="dev"         icon="/svg/Dev.svg" />
+                <NavLink href="/settings"   isActive={isActive("/settings")}   title="/настройки"   icon={Settings} />
+                <NavLink href="/changelogs" isActive={isActive("/changelogs")} title="/обновления"  icon={Download} />
+                <NavLink href="/dev"        isActive={isActive("/dev")}        title="/dev"         icon={Code} />
             </ul>
         </nav>
     )

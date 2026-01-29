@@ -1,5 +1,4 @@
 import Image from "next/image"
-import NewsAside from "@/components/News/NewsAside"
 
 export default function News() {
 
