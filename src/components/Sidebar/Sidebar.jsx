@@ -1,4 +1,4 @@
-import Navigation from "@/components/Navigation/Navigation"
+import Navigation from "@/components/Sidebar/Navigation/Navigation"
 import "./Sidebar.css"
 
 export default function Sidebar() {

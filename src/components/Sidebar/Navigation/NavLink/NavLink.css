@@ -1,11 +1,12 @@
 /* Кнопка навигации */
 .nav-link {
-    --nav-link-bg:           #072b1600;
-    --nav-link-color:        #20AA6B;
-    --nav-link-hover-bg:     #072b16;
-    --nav-link-hover-color:  #16C973;
-    --nav-link-active-bg:    #09361d;
-    --nav-link-active-color: #7BF1A8;
+    --nav-link-bg:           transparent;
+    --nav-link-color:        #A6AABB;
+    --nav-link-sing-color:   #16C973;
+    --nav-link-hover-bg:     #1E2939;
+    --nav-link-hover-color:  #05dF72;
+    --nav-link-active-bg:    #F54900;
+    --nav-link-active-color: #FFFFFF;
 
     width: 100%;
     height: 36px;
@@ -15,15 +16,21 @@
     align-items: center;
     gap: var(--gap-2);
 
+    border-radius: var(--border-radius-small);
+    border-left: 2px solid transparent;
+
     text-decoration: none;
 
     & span, svg { color: var(--nav-link-color); }
 }
 
+.nav-link .nav-link__sign { color: var(--nav-link-sing-color); }
+
 /* Наведение на пк */
 @media (hover: hover) {
     .nav-link:is(:hover, :focus-visible) {
         background-color: var(--nav-link-hover-bg);
+        border-left-color: var(--nav-link-hover-color);
         & span, svg { color: var(--nav-link-hover-color); }
     }
 }
@@ -32,6 +39,7 @@
 @media (hover: none) {
     .nav-link:active { 
         background-color: var(--nav-link-hover-bg);
+        border-left-color: var(--nav-link-hover-color);
         & span, svg { color: var(--nav-link-hover-color); }
     }
 }
@@ -39,7 +47,7 @@
 /* Активная ссылка, эффект при наведении не изменяет уже активную ссылку */
 nav .nav-link.active {
     background-color: var(--nav-link-active-bg);
-    border-left: 2px solid var(--nav-link-active-color);
+    border-left-color: var(--nav-link-active-color);
     & span, svg { color: var(--nav-link-active-color); }
 }
 

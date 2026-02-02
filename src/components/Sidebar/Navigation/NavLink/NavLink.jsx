@@ -6,7 +6,7 @@ export default function NavLink({ href, isActive=false, title, icon: Icon }) {
     return (
         <li>
             <Link href={href} className={clsx("nav-link", { "active": isActive })} >
-                <span>{isActive ? "▶" : "○"}</span>
+                <span className="nav-link__sign">{isActive ? ">" : "•"}</span>
                 <Icon size={16} />
                 <span className="text-light fs-small">{title}</span>
             </Link>
