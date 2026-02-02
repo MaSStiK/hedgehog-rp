@@ -7,6 +7,14 @@
     gap: var(--gap-5);
 }
 
-#not-found a {
-    width: 100%;
+.not-found__top {
+    align-items: center;
+}
+
+.not-found__top span {
+    font-size: 80px;
+}
+
+.not-found__top img {
+    border-radius: 50%;
 }

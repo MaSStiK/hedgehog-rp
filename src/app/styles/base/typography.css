@@ -69,12 +69,15 @@ p, .p, span, label { font-size: var(--fs-medium); line-height: 1.5; }
 /* Цвет текста */
 .text-white  { color: var(--text-white); }
 .text-light  { color: var(--text-light); }
-.text-gray   { color: var(--text-gray);  }
-.text-dark   { color: var(--text-dark);  }
+.text-gray   { color: var(--text-gray); }
+.text-dark   { color: var(--text-dark); }
 .text-black  { color: var(--text-black); }
 .text-green  { color: var(--text-green); }
 .text-orange { color: var(--text-orange); }
-.text-red    { color: var(--text-red);   }
+.text-red    { color: var(--text-red); }
+
+/* Текст по центру */
+.text-center { text-align: center;}
 
 /* Текст с переносами строк */
 .text-pre { white-space: pre-wrap; }
