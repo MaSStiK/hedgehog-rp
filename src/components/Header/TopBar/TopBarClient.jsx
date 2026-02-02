@@ -43,6 +43,7 @@ export default function TopBarClient({ server, pid, uptimeStartAt, timeStartAt }
             </div>
             <div className="flex-row gap-4">
                 <span className="text-gray fs-tiny">uptime: {uptime}</span>
+                <span className="text-dark fs-tiny">|</span>
                 <span className="text-gray fs-tiny">{time}</span>
             </div>
         </div>

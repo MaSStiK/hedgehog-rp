@@ -1,6 +1,7 @@
 "use client"
 import dynamic from "next/dynamic"
 import Button from "@/components/UI/Button/Button"
+import "./HomeAside.css"
 
 const SeriesLinkout = dynamic(
     () => import("./SeriesLinkout"),

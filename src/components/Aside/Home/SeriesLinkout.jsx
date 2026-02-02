@@ -29,7 +29,7 @@ function Series({ data }) {
     return (
         <a href={data.href} className=" text-light text-decoration-none">
         <Image
-            className="home__thumbnail"
+            className="home-aside__thumbnail"
             src={data.thumbnail} alt="thumbnail"
             width={292} height={164}
             draggable={false}

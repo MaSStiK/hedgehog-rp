@@ -8,9 +8,3 @@
 .calendar-text {
     font-variant-numeric: tabular-nums;
 }
-
-.home__thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-}
