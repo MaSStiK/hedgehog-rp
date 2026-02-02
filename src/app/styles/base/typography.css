@@ -15,9 +15,9 @@
 
     /* Цвет текста */
     --text-white:  #FFFFFF;
-    --text-light:  #FFFFFFE6; /* 90% прозрачность */
-    --text-gray:   #FFFFFF80; /* 50% прозрачность */
-    --text-dark:   #FFFFFF4D; /* 30% прозрачность */
+    --text-light:  #f0f0f0; /* 90% прозрачность */
+    --text-gray:   #767A8D; /* 50% прозрачность */
+    --text-dark:   #626678;
     --text-black:  #000000;
     --text-green:  #22c55e;
     --text-orange: #EA580C;
