@@ -8,8 +8,6 @@ header {
     height: var(--header-height);
     border-bottom: 2px solid var(--border-accent);
     background-color: var(--bg-primary);
-
-    font-family: monospace;
 }
 
 .header__content {

@@ -5,7 +5,7 @@ import "./Header.css"
 
 export default function Header() {
     return (
-        <header>
+        <header className="font-monospace">
             <TopBar />
             <div className="header__content">
                 <Link href="/" className="flex-row text-white text-decoration-none header__content-logo">

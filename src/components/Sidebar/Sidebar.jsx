@@ -3,7 +3,7 @@ import "./Sidebar.css"
 
 export default function Sidebar() {
     return (
-        <div className="sidebar">
+        <div className="sidebar font-monospace">
             {/* Кнопка профиля */}
             <div className="flex-col gap-1 sidebar__text-info">
                 <span className="text-green">$ ls /applications</span>

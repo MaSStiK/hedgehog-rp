@@ -4,8 +4,6 @@
     height: calc(100% - var(--header-height)); /* Высота во всю страницу */
     background-color: var(--bg-primary);
     border-right: 1px solid var(--border-primary);
-
-    font-family: monospace;
 }
 
 .sidebar hr {
