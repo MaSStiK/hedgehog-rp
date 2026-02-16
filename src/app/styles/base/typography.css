@@ -15,8 +15,8 @@
 
     /* Цвет текста */
     --text-white:  #FFFFFF;
-    --text-light:  #f0f0f0; /* 90% прозрачность */
-    --text-gray:   #767A8D; /* 50% прозрачность */
+    --text-light:  #f0f0f0;
+    --text-gray:   #767A8D;
     --text-dark:   #626678;
     --text-black:  #000000;
     --text-green:  #22c55e;
@@ -46,6 +46,8 @@ body {
     color: var(--text-light);
     overflow-wrap: break-word;
 }
+
+.font-monospace { font-family: monospace; }
 
 /* Размер текста */
 h1, .h1 { font-size: var(--fs-xlarge); line-height: 1.2; }
