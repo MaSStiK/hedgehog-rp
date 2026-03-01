@@ -13,8 +13,8 @@ export default function NotFound() {
                 <Image
                     src="/assets/not-found/not-found.webp"
                     alt="hedgehog"
-                    width={128}
-                    height={128}
+                    width={100}
+                    height={100}
                 />
                 <span className="fw-bold">4</span>
             </div>
