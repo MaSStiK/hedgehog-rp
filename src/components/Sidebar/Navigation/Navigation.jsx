@@ -33,7 +33,7 @@ export default function Navigation() {
                 <NavLink href="/maps"       isActive={isActive("/maps")}       title="карта-мира"  icon={Map} />
                 <NavLink href="/tools"      isActive={isActive("/utils")}      title="инструменты" icon={Wrench} />
                 <NavLink href="/support"    isActive={isActive("/support")}    title="помощь"      icon={HelpCircle} />
-                <NavLink href="/about"      isActive={isActive("/about")}      title="о нас"       icon={Info} />
+                <NavLink href="/about"      isActive={isActive("/about")}      title="о-нас"       icon={Info} />
                 <NavLink href="https://tv.hedgehog-rp.ru"                      title="ежиное-тв ↗"   icon={Tv} />
                 <hr />
                 <NavLink href="/settings"   isActive={isActive("/settings")}   title="настройки"   icon={Settings} />
