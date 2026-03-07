@@ -116,13 +116,3 @@ a {
     text-decoration: underline;
     cursor: pointer;
 }
-
-/* На пк ссылка подчеркивается при наведении */
-/* @media (hover: hover) {
-    .text-link:is(:hover, :focus-visible) { text-decoration: underline; }
-} */
-
-/* На мобильных девайсах ссылки подчеркнуты изначально */
-/* @media (hover: none) {
-    .text-link { text-decoration: underline; }
-} */

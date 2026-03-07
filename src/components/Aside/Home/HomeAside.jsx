@@ -12,7 +12,7 @@ const SeriesLinkout = dynamic(
 function HomeAsideLoading() {
     return (
         <section className="flex-col">
-            <h3>Ежиных&nbsp;хроники</h3>
+            <h3>Ежиные&nbsp;хроники</h3>
             <p>Загрузка...</p>
         </section>
     )
@@ -30,14 +30,18 @@ export default function HomeAside() {
                         icon="/assets/social-networks/VK.svg"
                         text="Группа в ВК" title="Перейти к группе в ВК"
                         href="https://vk.com/hedgehogs_army"
+                        width100
                         small
+                        atStart
                     />
                     <Button
                         className="tp"
                         icon="/assets/social-networks/Youtube.svg"
                         text="Канал на YouTube" title="Перейти к каналу на YouTube"
                         href="https://www.youtube.com/@hedgehogs_army"
+                        width100
                         small
+                        atStart
                     />
                 </div>
             </section>

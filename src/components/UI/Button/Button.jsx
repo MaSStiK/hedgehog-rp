@@ -27,7 +27,7 @@ export default function Button({
     href, target, rel, 
 
     // Пропсы для отображения картинки
-    icon, alt="button-image",
+    icon, alt="button-image", color="#FFFFFF",
     
     // Модификаторы кнопки
     small,
@@ -41,7 +41,7 @@ export default function Button({
     const classes = clsx(
         "button ui-button",
         {
-            "button--small": small, // Маленький
+            "button--small": small, // Маленькая кнопка
             "button--round": round, // Скругленные углы
             "button--width100": width100, // Кнопка во всю ширину
             "button--atStart": atStart, // Контент кнопки в начале
@@ -52,12 +52,12 @@ export default function Button({
 
     const commonProps = { id, className: classes, style, title }
 
-    const Icon = typeof icon === "function" ? icon : null // Если в icon передаем иконку из "lucide-react" - отображаем его как компонент
+    const Icon = typeof icon === "object" ? icon : null // Если в icon передаем иконку из "lucide-react" - отображаем его как компонент
     const src = typeof icon === "string" ? icon : null // Если в icon передаем ссылку на картинку - отображаем как Image src
     const content = (
         <>
-            {Icon && <Icon size={24} />}
-            {src && <Image src={src} alt={alt} width={24} height={24} />}
+            {Icon && <Icon size={16} color={color} />}
+            {src && <Image src={src} alt={alt} width={16} height={16} />}
             {text && <span>{text}</span>}
         </>
     )

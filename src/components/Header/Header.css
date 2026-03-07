@@ -12,6 +12,7 @@ header {
 
 .header__content {
     padding: var(--gap-2) var(--gap-6);
+    justify-content: space-between;
 }
 
 /* Блок с логотипом и названием сайта */
@@ -21,4 +22,40 @@ header {
 
 .header__content-title {
     font-size: 18px;
+}
+
+
+/* Правая часть хедера */
+.header__right {
+    align-items: center;
+}
+
+.header__right > input[type=text] {
+    /* todo: временное решение */
+    width: 300px;
+    height: 42px;
+    max-height: 42px;
+}
+
+.header__right > .button {
+    --login-button-background: #101828;
+    --login-button-hover: #1e2939;
+    --login-button-border: #00c951;
+    width: 100px;
+    height: 42px;
+    max-height: 42px;
+
+    background-color: var(--login-button-background);
+    border: 1px solid var(--login-button-border);
+    color: var(--login-button-border);
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    .header__right > .button:is(:hover, :focus-visible) { background-color: var(--login-button-hover); }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+    .header__right > .button:active { background-color: var(--login-button-hover); }
 }

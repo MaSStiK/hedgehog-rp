@@ -11,18 +11,18 @@
 }
 
 /* Маленький текст */
-.button--small span { font-size: var(--fs-small); }
+.ui-button.button--small span { font-size: var(--fs-small); }
 
 /* Скругленные углы */
-.button--round { border-radius: 18px; padding: var(--gap-1) 8px; }
+.ui-button.button--round { border-radius: 18px; padding: var(--gap-1) 8px; }
 
 /* Кнопка во всю ширину */
-.button--width100 { width: 100%; }
+.ui-button.button--width100 { width: 100%; }
 
 /* Контент кнопки слева, а не по центру */
-.button--atStart {justify-content: flex-start; }
+.ui-button.button--atStart { justify-content: flex-start; }
 
 /* Модификатор для мобильного скрытия текста */
 @media screen and (max-width: 400px) { 
-    .button--phoneTextHide span { display: none; }
+    .ui-button.button--phoneTextHide span { display: none; }
 }

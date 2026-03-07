@@ -18,7 +18,7 @@ export default function SeriesLinkout() {
 
     return (
         <section className="flex-col">
-            <h3>Ежиных&nbsp;хроники</h3>
+            <h3>Ежиные&nbsp;хроники</h3>
             {content}
         </section>
     )

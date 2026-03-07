@@ -20,6 +20,7 @@
 button, .button {
     width: min(200px, 100%);
     min-height: var(--button-height); /* Минимальная ширина кнопки является высота и получается квадратная форма */
+    max-height: var(--button-height);
     padding: var(--gap-1);
 
     display: flex;
@@ -33,7 +34,7 @@ button, .button {
 
     outline: none;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-small);
     background-color: var(--button-default);
 
     overflow: hidden;
@@ -75,4 +76,4 @@ button, .button {
 }
 
 /* Минимальный размер кнопки */
-:is(button, .button).fit { width: fit-content; }
+:is(button, .button).fit-content { width: fit-content; }

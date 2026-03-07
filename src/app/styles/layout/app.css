@@ -56,7 +56,9 @@ section {
     padding: var(--gap-3);
     position: relative;
 
-    background-color: var(--bg-secondary);
+    background-color: #1C202466;
+    background-color: rgba(0,0,0,0.6);
     border: 1px solid var(--border-secondary);
     border-radius: var(--border-radius);
+    backdrop-filter: blur(8px);
 }

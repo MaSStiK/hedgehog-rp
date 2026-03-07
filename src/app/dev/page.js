@@ -1,13 +1,12 @@
 "use client"
 import Link from "next/link"
 import Button from "@/components/UI/Button/Button"
+import { Home } from "lucide-react"
 
 const text = `p textarea
 This is a test text used for checking layout, typography, and content placement.
 It has no specific meaning and is intended solely for demonstration purposes.
 Designers and developers often use such text to preview how real content will appear in an interface or document.`
-
-const text2 = `readOnly This is a test text.`
 
 export default function Dev() {
     return (
@@ -35,16 +34,25 @@ export default function Dev() {
 
                 <div className="flex-row">
                     <Button
-                        text="UI Button link" title="Button link"
+                        icon={Home}
+                        text="UI Button with icon"
+                    />
+                    <Button
+                        icon={Home}
+                        text="UI Button link"
+                        title="Button link"
                         href="#"
                     />
-                    <Link className="button" href="#">button link</Link>
-                    <button className="fit">fit content</button>
+                    <Link
+                        className="button"
+                        href="#"
+                    >link with button class</Link>
                 </div>
 
                 <hr />
 
                 <p>default text</p>
+                <span>default span</span>
                 <Link href="#" className="text-link">default link</Link>
                 <p className="fs-xxlarge">fs-xxlarge</p>
                 <p className="fs-xlarge">fs-xlarge</p>
@@ -56,11 +64,11 @@ export default function Dev() {
 
                 <input type="text" placeholder="default input" />
                 <input type="text" className="error" placeholder="error input" />
-                <input type="text" value="read only" readOnly />
+                <input type="text" value="readOnly input" readOnly />
                 <input type="text" value="disabled" disabled />
                 <textarea placeholder="default textarea" maxLength={100}></textarea>
                 <p className="textarea">{text}</p>
-                <textarea readOnly value={text2}></textarea>
+                <textarea value="readOnly textarea" readOnly></textarea>
             </section>
         </article>
     )

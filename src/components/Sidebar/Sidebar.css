@@ -1,6 +1,9 @@
-/* sidebar шириной в 192px */
+:root {
+    --sidebar-width: 255px;
+}
+
 .sidebar {
-    min-width: 192px;
+    min-width: var(--sidebar-width);
     height: calc(100% - var(--header-height)); /* Высота во всю страницу */
     background-color: var(--bg-primary);
     border-right: 1px solid var(--border-primary);

@@ -2,7 +2,6 @@
     height: fit-content;
     position: sticky;
     top: var(--gap-5);
-    /* right: calc((var(--gap-5) + 316px) * -1); */
 }
 
 aside {
