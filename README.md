@@ -19,3 +19,47 @@
 **Создатель проекта**
 - 📱 Telegram: [@danyla_yanakereshchenko](https://t.me/danyla_yanakereshchenko)
 - ✨ Принимает новых участников в проект
+
+## 📸 Скриншоты сайта
+<table>
+    <tr>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/c179cdc6-986c-425f-984b-0b3ccc4dfc83" />
+            <br>
+            <p>Главная страница</p>
+        </td>
+        <td align="center">
+          <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/e6861b6c-52e4-4014-956e-b0b85cbf704e" />
+            <br>
+            <p>Ошибка 404</p>
+        </td>
+    </tr>
+</table>
+
+## 🎨 Нереализованные макеты
+<table>
+    <tr>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/4e56275b-5a57-4f05-a546-d1a765008b8b" />
+            <br>
+            <p>Главная страница</p>
+        </td>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/516c06c6-bb5c-4a24-bd7e-38a7e3be9b15" />
+            <br>
+            <p>Участники</p>
+        </td>
+    </tr>
+  <tr>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/fd1d2262-72c6-47de-8f68-aad03a53758c" />
+            <br>
+            <p>Новости</p>
+        </td>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/2b8e5f4b-0258-4e4c-91c6-0a6de1ea943a" />
+            <br>
+            <p>Новости</p>
+        </td>
+    </tr>
+</table>
