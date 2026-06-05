@@ -13,14 +13,6 @@
 - 📺 [Ежиное телевидение](https://github.com/MaSStiK/tv.hedgehog-rp)
 - 📊 [Статистика беседы](https://github.com/MaSStiK/stats.hedgehog-rp)
 
-## 📇 Контакты
-**Главный Разработчик**
-- 📱 Telegram: [@MaSStiK](https://t.me/MaSStiK)
-
-**Создатель проекта**
-- 📱 Telegram: [@danyla_yanakereshchenko](https://t.me/danyla_yanakereshchenko)
-- ✨ Принимает новых участников в проект
-
 ## 🛠️ Технологии
 - **Next.js** — основа приложения и роутинг
 - **React** — интерфейс приложения
