@@ -6,7 +6,7 @@
 
 # Hedgehog RP (Next.js)
 > **Version:** `v2.0.0`  
-> **Legacy Version (React):** [hedgehog-rp-legacy](https://github.com/MaSStiK/hedgehog-rp-legacy)
+> **Legacy version (React):** [hedgehog-rp-legacy](https://github.com/MaSStiK/hedgehog-rp-legacy)
 
 **Hedgehog RP** is a social platform for a political role-playing game that brings participants together in a shared virtual world. Users can create their own countries, develop political and economic systems, publish news, interact with other players, form alliances, engage in diplomacy, and shape the ongoing history of the project.
 
@@ -30,7 +30,6 @@ Development is currently paused due to declining community activity and interest
 - 📊 [Chat Statistics](https://github.com/MaSStiK/stats.hedgehog-rp)
 
 ## 🛠️ Technologies
-
 - **Next.js** - Application framework and routing
 - **React** - User interface
 - **Axios** - HTTP requests

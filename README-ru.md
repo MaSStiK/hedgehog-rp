@@ -42,6 +42,7 @@
 - **Mongoose** - ODM для работы с MongoDB
 
 ## 📸 Скриншоты сайта
+
 <table>
     <tr>
         <td align="center">
