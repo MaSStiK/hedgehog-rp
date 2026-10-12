@@ -4,7 +4,12 @@
   <a href="./README.fr.md">🇫🇷 Français</a>
 </p>
 
+<div align="center">
+
 # Hedgehog RP (Next.js)
+
+</div>
+
 > **Version :** `v2.0.0`  
 > **Ancienne version (React) :** [hedgehog-rp-legacy](https://github.com/MaSStiK/hedgehog-rp-legacy)
 
@@ -14,6 +19,7 @@ Le projet est développé avec **Next.js** afin d'offrir de meilleures performan
 Le développement est actuellement suspendu en raison d'une baisse d'activité et d'intérêt au sein de la communauté.
 
 ## ✨ Fonctionnalités
+
 - Créer et développer vos propres États
 - Publier des actualités et des événements du jeu
 - Éditeur d’articles et de publications intuitif
@@ -25,11 +31,13 @@ Le développement est actuellement suspendu en raison d'une baisse d'activité e
 - Univers virtuel partagé avec une histoire en constante évolution
 
 ## 🔗 Projets associés
+
 - 🌍 [Carte interactive](https://github.com/MaSStiK/map.hedgehog-rp)
 - 📺 [Télévision Hérisson](https://github.com/MaSStiK/tv.hedgehog-rp)
 - 📊 [Statistiques de la conversation](https://github.com/MaSStiK/stats.hedgehog-rp)
 
 ## 🛠️ Technologies
+
 - **Next.js** - Base de l’application et système de routage
 - **React** - Interface utilisateur
 - **Axios** - Requêtes HTTP

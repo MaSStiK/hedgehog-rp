@@ -4,7 +4,12 @@
   <a href="./README.fr.md">🇫🇷 Français</a>
 </p>
 
+<div align="center">
+
 # Hedgehog RP (Next.js)
+
+</div>
+
 > **Version:** `v2.0.0`  
 > **Legacy version (React):** [hedgehog-rp-legacy](https://github.com/MaSStiK/hedgehog-rp-legacy)
 
@@ -14,6 +19,7 @@ The project is built with **Next.js** to provide high performance, a smooth user
 Development is currently paused due to declining community activity and interest.
 
 ## ✨ Features
+
 - Create and develop your own countries
 - Publish news articles and in-game events
 - User-friendly article and post editor
@@ -25,11 +31,13 @@ Development is currently paused due to declining community activity and interest
 - Shared virtual world with an evolving history
 
 ## 🔗 Related Projects
+
 - 🌍 [Interactive Map](https://github.com/MaSStiK/map.hedgehog-rp)
 - 📺 [Hedgehog Television](https://github.com/MaSStiK/tv.hedgehog-rp)
 - 📊 [Chat Statistics](https://github.com/MaSStiK/stats.hedgehog-rp)
 
 ## 🛠️ Technologies
+
 - **Next.js** - Application framework and routing
 - **React** - User interface
 - **Axios** - HTTP requests
